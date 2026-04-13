@@ -65,10 +65,10 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #8E87A8;
+  color: #3ca691;
   margin-top: 1.2em;
-  padding-bottom: 0.2em;
-  border-bottom: 1px solid #222240;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid rgba(60, 166, 145, 0.25);
 }
 
 /* Sidebar — child items */
