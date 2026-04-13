@@ -47,7 +47,7 @@ theme:
   favicon: assets/images/favicon.png
   logo: assets/images/logo.svg
   font:
-    text: Plus Jakarta Sans
+    text: Inter
     code: JetBrains Mono
   palette:
     - scheme: anny
