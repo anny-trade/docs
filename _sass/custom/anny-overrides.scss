@@ -1,0 +1,132 @@
+// Anny Trade branding overrides
+
+// Sidebar
+.site-nav {
+  background-color: #0A0A14;
+  border-right: 1px solid #222240;
+}
+
+.site-header {
+  background-color: #0A0A14;
+  border-bottom: 1px solid #222240;
+}
+
+.site-title {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+}
+
+// Logo in header
+.site-logo {
+  height: 28px;
+  width: auto;
+}
+
+// Navigation links
+.nav-list .nav-list-item .nav-list-link {
+  color: #C4BFD8;
+
+  &:hover,
+  &.active {
+    color: #deb7ff;
+  }
+}
+
+// Active nav highlight — purple accent
+.nav-list .nav-list-item .nav-list-link.active {
+  border-left: 2px solid #7C5CFC;
+  font-weight: 600;
+}
+
+// Links
+a {
+  color: #9B7AFF;
+
+  &:hover {
+    color: #deb7ff;
+  }
+}
+
+// Code blocks
+code {
+  background-color: #15152A;
+  border: 1px solid #222240;
+  color: #deb7ff;
+}
+
+pre {
+  background-color: #10101E;
+  border: 1px solid #222240;
+}
+
+pre code {
+  border: none;
+  color: #F0EEF8;
+}
+
+// Tables
+th {
+  background-color: #10101E;
+  color: #C4BFD8;
+  border-color: #222240;
+}
+
+td {
+  border-color: #222240;
+}
+
+// Search
+.search-input {
+  background-color: #10101E;
+  border-color: #222240;
+  color: #F0EEF8;
+
+  &:focus {
+    border-color: #7C5CFC;
+    box-shadow: 0 0 0 2px rgba(124, 92, 252, 0.25);
+  }
+}
+
+// Main content area
+.main-content {
+  h1, h2, h3, h4, h5, h6 {
+    color: #F0EEF8;
+  }
+
+  h1 {
+    border-bottom: 1px solid #222240;
+    padding-bottom: 0.3em;
+  }
+}
+
+// Breadcrumbs
+.breadcrumb-nav-list-item {
+  color: #8E87A8;
+
+  a {
+    color: #8E87A8;
+
+    &:hover {
+      color: #9B7AFF;
+    }
+  }
+}
+
+// Footer
+.site-footer {
+  border-top: 1px solid #222240;
+  color: #8E87A8;
+}
+
+// Back to top button
+.back-to-top {
+  color: #7C5CFC;
+}
+
+// Aux links (top right)
+.aux-nav .aux-nav-list-item a {
+  color: #3ca691;
+
+  &:hover {
+    color: #4ECDC4;
+  }
+}

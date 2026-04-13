@@ -1,9 +1,12 @@
-title: Anny Trade Docs
+title: Anny Trade
 description: AI-powered crypto portfolio intelligence — API & MCP documentation
 remote_theme: just-the-docs/just-the-docs@v0.10.0
-color_scheme: dark
+color_scheme: anny
 
 url: https://docs.anny.trade
+
+logo: "/assets/images/logo.svg"
+favicon_ico: "/assets/images/favicon.ico"
 
 aux_links:
   "anny.trade":
@@ -11,6 +14,7 @@ aux_links:
 
 # Footer
 gh_edit_link: false
+footer_content: "&copy; 2026 Anny Trade. AI-powered crypto portfolio intelligence."
 
 # Search
 search_enabled: true
