@@ -1,7 +1,8 @@
 site_name: Anny Trade
 site_description: AI-powered crypto portfolio intelligence — API & MCP documentation
 site_url: https://docs.anny.trade
-docs_dir: .
+docs_dir: docs
+site_dir: site
 
 nav:
   - Welcome: index.md
