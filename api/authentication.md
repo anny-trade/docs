@@ -1,3 +1,9 @@
+---
+title: Authentication
+parent: API Reference
+nav_order: 1
+---
+
 # API Authentication
 
 ## Session Token

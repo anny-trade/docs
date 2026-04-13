@@ -1,3 +1,9 @@
+---
+title: Portfolio
+parent: API Reference
+nav_order: 3
+---
+
 # Portfolio
 
 Retrieve your current positions across all connected exchanges.

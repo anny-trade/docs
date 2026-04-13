@@ -1,3 +1,9 @@
+---
+title: Tools Reference
+parent: MCP Connector
+nav_order: 3
+---
+
 # Tools Reference
 
 All available MCP tools, their parameters, and response formats.

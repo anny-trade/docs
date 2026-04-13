@@ -1,3 +1,9 @@
+---
+title: Understanding CFO Line States
+parent: Guides
+nav_order: 3
+---
+
 # Understanding CFO Line States
 
 The CFO Anny Line is a proprietary trend indicator that classifies market conditions into three distinct states based on price structure.

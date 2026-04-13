@@ -1,3 +1,9 @@
+---
+title: Add Rebuy
+parent: "Signal API (Partner)"
+nav_order: 6
+---
+
 # Add Rebuy
 
 ```

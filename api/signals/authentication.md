@@ -1,3 +1,9 @@
+---
+title: Authentication
+parent: "Signal API (Partner)"
+nav_order: 1
+---
+
 # Signal API Authentication
 
 Partner authentication uses an API key + HMAC secret pair issued per partner channel.

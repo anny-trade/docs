@@ -1,3 +1,9 @@
+---
+title: Reading Your Portfolio
+parent: Guides
+nav_order: 4
+---
+
 # Reading Your Portfolio
 
 The `get_portfolio_status` tool gives you a complete view of your holdings across all connected exchanges, enriched with CFO Anny Line indicator states.

@@ -1,3 +1,9 @@
+---
+title: Authentication
+parent: MCP Connector
+nav_order: 2
+---
+
 # Authentication
 
 The MCP connector uses OAuth 2.1 with PKCE for authentication. Most MCP clients handle this automatically — you just click "Connect" and sign in.

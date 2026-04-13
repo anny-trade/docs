@@ -1,3 +1,9 @@
+---
+title: Cancel Signal
+parent: "Signal API (Partner)"
+nav_order: 9
+---
+
 # Cancel Signal
 
 ```

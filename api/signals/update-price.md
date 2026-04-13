@@ -1,3 +1,9 @@
+---
+title: Update Prices
+parent: "Signal API (Partner)"
+nav_order: 8
+---
+
 # Update Prices
 
 ```

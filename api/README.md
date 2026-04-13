@@ -1,3 +1,9 @@
+---
+title: API Reference
+nav_order: 3
+has_children: true
+---
+
 # API Reference
 
 The Anny Trade REST API provides programmatic access to the same intelligence layer that powers the MCP connector and the web platform.

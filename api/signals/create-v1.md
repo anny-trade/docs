@@ -1,3 +1,9 @@
+---
+title: "Create Signal (V1)"
+parent: "Signal API (Partner)"
+nav_order: 2
+---
+
 # Create Signal (V1)
 
 ```

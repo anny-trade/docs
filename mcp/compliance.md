@@ -1,3 +1,9 @@
+---
+title: "Compliance & Disclaimers"
+parent: MCP Connector
+nav_order: 6
+---
+
 # Compliance & Disclaimers
 
 ## Financial Disclaimer

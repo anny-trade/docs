@@ -1,3 +1,9 @@
+---
+title: Add DCA
+parent: "Signal API (Partner)"
+nav_order: 7
+---
+
 # Add DCA
 
 ```

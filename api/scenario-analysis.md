@@ -1,3 +1,9 @@
+---
+title: Scenario Analysis
+parent: API Reference
+nav_order: 4
+---
+
 # Scenario Analysis
 
 Run a historical scenario analysis to see how the CFO Anny Line indicator readings corresponded with price movements over a given period.

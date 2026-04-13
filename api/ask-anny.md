@@ -1,3 +1,9 @@
+---
+title: askAnny
+parent: API Reference
+nav_order: 5
+---
+
 # askAnny
 
 Chat with Anny, the AI portfolio intelligence assistant. Anny has access to indicator readings, market data, and (for authenticated users) your portfolio context.
