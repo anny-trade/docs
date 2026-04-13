@@ -1,9 +1,3 @@
----
-title: Getting Started
-parent: MCP Connector
-nav_order: 1
----
-
 # Getting Started
 
 ## Prerequisites

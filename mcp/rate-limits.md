@@ -1,9 +1,3 @@
----
-title: Rate Limits
-parent: MCP Connector
-nav_order: 5
----
-
 # Rate Limits
 
 Rate limits are applied per user (authenticated) or per IP (guest) using a sliding window.

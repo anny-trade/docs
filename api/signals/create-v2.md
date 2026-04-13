@@ -1,9 +1,3 @@
----
-title: "Create Signal (V2)"
-parent: "Signal API (Partner)"
-nav_order: 3
----
-
 # Create Signal (V2)
 
 ```

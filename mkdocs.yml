@@ -1,0 +1,109 @@
+site_name: Anny Trade
+site_description: AI-powered crypto portfolio intelligence — API & MCP documentation
+site_url: https://docs.anny.trade
+
+nav:
+  - Welcome: index.md
+  - MCP Connector:
+      - Overview: mcp/index.md
+      - Getting Started: mcp/getting-started.md
+      - Authentication: mcp/authentication.md
+      - Tools Reference: mcp/tools.md
+      - Example Prompts: mcp/examples.md
+      - Rate Limits: mcp/rate-limits.md
+      - Compliance & Disclaimers: mcp/compliance.md
+  - API Reference:
+      - Overview: api/index.md
+      - Authentication: api/authentication.md
+      - CFO Anny Line: api/cfo-line.md
+      - Portfolio: api/portfolio.md
+      - Scenario Analysis: api/scenario-analysis.md
+      - askAnny: api/ask-anny.md
+  - Signal API (Partner):
+      - Overview: api/signals/index.md
+      - Authentication: api/signals/authentication.md
+      - Create Signal (V1): api/signals/create-v1.md
+      - Create Signal (V2): api/signals/create-v2.md
+      - Add Take Profit: api/signals/take-profit.md
+      - Add Trailing Stop: api/signals/trailing-stop.md
+      - Add Rebuy: api/signals/rebuy.md
+      - Add DCA: api/signals/dca.md
+      - Update Prices: api/signals/update-price.md
+      - Cancel Signal: api/signals/cancel.md
+  - AI Endpoints (V3):
+      - Assess Risk: api/v3/assess-risk.md
+      - Get Price: api/v3/get-price.md
+  - Guides:
+      - Connect to Claude Desktop: guides/claude-desktop.md
+      - Connect to Claude.ai: guides/claude-web.md
+      - Understanding CFO Line States: guides/cfo-line-states.md
+      - Reading Your Portfolio: guides/reading-portfolio.md
+
+theme:
+  name: material
+  language: en
+  favicon: assets/images/favicon.png
+  logo: assets/images/logo.svg
+  font:
+    text: Plus Jakarta Sans
+    code: JetBrains Mono
+  palette:
+    - scheme: anny
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.footer
+    - navigation.path
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/anny-trade
+      name: GitHub
+
+extra_css:
+  - assets/css/anny.css
+
+strict: false

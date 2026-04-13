@@ -1,9 +1,3 @@
----
-title: Connect to Claude Desktop
-parent: Guides
-nav_order: 1
----
-
 # Connect to Claude Desktop
 
 Step-by-step guide to connecting Anny Trade to the Claude Desktop app.

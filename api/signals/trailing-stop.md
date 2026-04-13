@@ -1,9 +1,3 @@
----
-title: Add Trailing Stop
-parent: "Signal API (Partner)"
-nav_order: 5
----
-
 # Add Trailing Stop
 
 ```

@@ -1,9 +1,3 @@
----
-title: "Signal API (Partner)"
-nav_order: 4
-has_children: true
----
-
 # Signal API (Partner)
 
 The Signal API allows partner channels to create and manage trading signals programmatically. Signals are distributed to subscribed users who can auto-execute them on connected exchanges.

@@ -1,9 +1,3 @@
----
-title: CFO Anny Line
-parent: API Reference
-nav_order: 2
----
-
 # CFO Anny Line
 
 Get the current indicator state and recent transitions for any crypto asset.

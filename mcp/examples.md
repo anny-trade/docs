@@ -1,9 +1,3 @@
----
-title: Example Prompts
-parent: MCP Connector
-nav_order: 4
----
-
 # Example Prompts
 
 Ready-to-use prompts you can try after connecting Anny to your AI client.

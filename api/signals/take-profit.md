@@ -1,9 +1,3 @@
----
-title: Add Take Profit
-parent: "Signal API (Partner)"
-nav_order: 4
----
-
 # Add Take Profit
 
 ```

@@ -1,9 +1,3 @@
----
-title: Get Price
-parent: "AI Endpoints (V3)"
-nav_order: 2
----
-
 # Get Price
 
 ```

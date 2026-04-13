@@ -1,9 +1,3 @@
----
-title: Connect to Claude.ai
-parent: Guides
-nav_order: 2
----
-
 # Connect to Claude.ai
 
 Step-by-step guide to connecting Anny Trade to Claude on the web.

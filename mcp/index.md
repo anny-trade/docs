@@ -1,9 +1,3 @@
----
-title: MCP Connector
-nav_order: 2
-has_children: true
----
-
 # MCP Connector
 
 The Anny Trade MCP Connector lets you access Anny's portfolio intelligence tools directly from Claude, ChatGPT, or any [MCP-compatible](https://modelcontextprotocol.io) AI client.

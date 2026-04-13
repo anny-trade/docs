@@ -1,0 +1,145 @@
+/* Anny Trade — Obsidian dark theme for MkDocs Material */
+
+[data-md-color-scheme="anny"] {
+  /* Primary palette */
+  --md-primary-fg-color: #0A0A14;
+  --md-primary-fg-color--light: #15152A;
+  --md-primary-fg-color--dark: #06060E;
+  --md-primary-bg-color: #F0EEF8;
+  --md-primary-bg-color--light: #C4BFD8;
+
+  /* Accent — purple */
+  --md-accent-fg-color: #9B7AFF;
+  --md-accent-fg-color--transparent: rgba(155, 122, 255, 0.1);
+  --md-accent-bg-color: #7C5CFC;
+  --md-accent-bg-color--light: rgba(124, 92, 252, 0.1);
+
+  /* Default scheme overrides */
+  --md-default-fg-color: #F0EEF8;
+  --md-default-fg-color--light: #C4BFD8;
+  --md-default-fg-color--lighter: #8E87A8;
+  --md-default-fg-color--lightest: rgba(142, 135, 168, 0.3);
+  --md-default-bg-color: #06060E;
+  --md-default-bg-color--light: #0A0A14;
+  --md-default-bg-color--lighter: #10101E;
+  --md-default-bg-color--lightest: #15152A;
+
+  /* Code */
+  --md-code-fg-color: #deb7ff;
+  --md-code-bg-color: #15152A;
+  --md-code-hl-color: rgba(124, 92, 252, 0.15);
+  --md-code-hl-number-color: #3DD68C;
+  --md-code-hl-special-color: #FFB547;
+  --md-code-hl-function-color: #9B7AFF;
+  --md-code-hl-constant-color: #4ECDC4;
+  --md-code-hl-keyword-color: #deb7ff;
+  --md-code-hl-string-color: #3ca691;
+  --md-code-hl-name-color: #F0EEF8;
+  --md-code-hl-operator-color: #FFB547;
+  --md-code-hl-punctuation-color: #8E87A8;
+  --md-code-hl-comment-color: #6B6588;
+  --md-code-hl-generic-color: #F0EEF8;
+  --md-code-hl-variable-color: #F0EEF8;
+
+  /* Typeset */
+  --md-typeset-color: #F0EEF8;
+  --md-typeset-a-color: #9B7AFF;
+
+  /* Navigation */
+  --md-footer-fg-color: #C4BFD8;
+  --md-footer-fg-color--light: #8E87A8;
+  --md-footer-fg-color--lighter: #6B6588;
+  --md-footer-bg-color: #0A0A14;
+  --md-footer-bg-color--dark: #06060E;
+
+  /* Shadow */
+  --md-shadow-z1: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+  --md-shadow-z2: 0 0.2rem 1rem rgba(0, 0, 0, 0.4);
+  --md-shadow-z3: 0 0.2rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+/* Sidebar / nav styling */
+[data-md-color-scheme="anny"] .md-nav__link {
+  color: #C4BFD8;
+}
+
+[data-md-color-scheme="anny"] .md-nav__link:hover {
+  color: #deb7ff;
+}
+
+[data-md-color-scheme="anny"] .md-nav__link--active {
+  color: #9B7AFF;
+  font-weight: 600;
+}
+
+/* Header bar */
+[data-md-color-scheme="anny"] .md-header {
+  background-color: #0A0A14;
+  border-bottom: 1px solid #222240;
+}
+
+/* Search bar */
+[data-md-color-scheme="anny"] .md-search__input {
+  background-color: #15152A;
+  color: #F0EEF8;
+}
+
+[data-md-color-scheme="anny"] .md-search__input::placeholder {
+  color: #8E87A8;
+}
+
+/* Tables */
+[data-md-color-scheme="anny"] .md-typeset table:not([class]) th {
+  background-color: #10101E;
+  color: #C4BFD8;
+  border-color: #222240;
+}
+
+[data-md-color-scheme="anny"] .md-typeset table:not([class]) td {
+  border-color: #222240;
+}
+
+/* Code blocks */
+[data-md-color-scheme="anny"] .md-typeset code {
+  border: 1px solid #222240;
+}
+
+[data-md-color-scheme="anny"] .md-typeset pre code {
+  border: none;
+}
+
+[data-md-color-scheme="anny"] .md-typeset pre {
+  border: 1px solid #222240;
+}
+
+/* Logo sizing */
+.md-header__topic .md-logo img {
+  height: 26px;
+  width: auto;
+}
+
+/* Teal accent on aux links (anny.trade link) */
+[data-md-color-scheme="anny"] .md-header__source {
+  color: #3ca691;
+}
+
+/* Scrollbar */
+[data-md-color-scheme="anny"] ::-webkit-scrollbar-thumb {
+  background-color: #222240;
+}
+
+[data-md-color-scheme="anny"] ::-webkit-scrollbar-track {
+  background-color: #0A0A14;
+}
+
+/* Admonitions */
+[data-md-color-scheme="anny"] .md-typeset .admonition,
+[data-md-color-scheme="anny"] .md-typeset details {
+  background-color: #10101E;
+  border-color: #222240;
+}
+
+/* Footer copyright */
+[data-md-color-scheme="anny"] .md-copyright {
+  color: #6B6588;
+}
