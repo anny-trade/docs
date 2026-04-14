@@ -10,6 +10,11 @@ The Anny Trade MCP Connector lets you access Anny's portfolio intelligence tools
 | `get_market_analysis` | Get CFO Anny Line indicator reading for any asset | No |
 | `get_portfolio_status` | View your portfolio with indicator states | Yes |
 | `run_scenario_analysis` | Run historical scenario analysis on any asset | Yes |
+| `backtest_custom_strategy` | Backtest your own indicator strategy | Yes |
+| `scan_custom_signals` | Check if your strategy conditions are met now | Yes |
+| `deploy_strategy_as_bot` | Deploy a strategy as a live trading bot | Yes |
+| `get_bot_strategy` | View strategy rules on an existing bot | Yes |
+| `update_strategy_config` | Modify strategy rules on a bot | Yes |
 | `feedback_to_anny` | Send feedback or report a bug | No |
 
 ## Server URL

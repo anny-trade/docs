@@ -11,6 +11,7 @@ nav:
       - Getting Started: mcp/getting-started.md
       - Authentication: mcp/authentication.md
       - Tools Reference: mcp/tools.md
+      - Custom Strategy Builder: mcp/custom-strategies.md
       - Example Prompts: mcp/examples.md
       - Rate Limits: mcp/rate-limits.md
       - Compliance & Disclaimers: mcp/compliance.md

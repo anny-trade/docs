@@ -144,6 +144,134 @@ Confirmation that your feedback was recorded.
 
 ---
 
+## Custom Strategy Tools
+
+For full documentation on custom strategies, see [Custom Strategy Builder](custom-strategies.md).
+
+### backtest\_custom\_strategy
+
+Backtest a custom trading strategy against historical data using technical indicators.
+
+**Auth required:** Yes | **Cost:** 5 credits
+
+#### Parameters
+
+| Name | Type | Required | Default | Description |
+|------|------|----------|---------|-------------|
+| `name` | string | No | `Custom Strategy` | Strategy name |
+| `asset` | string | Yes | — | Crypto symbol: `BTC`, `ETH`, `SOL`, etc. |
+| `interval` | string | No | `1d` | Primary interval: `1d`, `4h`, `1h` |
+| `direction` | string | No | `long` | Trade direction: `long` or `short` |
+| `lookback_period` | string | No | `6M` | Lookback: `3M`, `6M`, `1y` |
+| `trigger` | object | Yes | — | Entry signal condition (see [condition format](#condition-format)) |
+| `confirmations` | array | No | `[]` | Additional conditions that must all be true |
+| `stop_loss` | object | No | `3%` | Stop-loss config: `{type, value}` |
+| `take_profit` | object | No | `6%` | Take-profit config: `{type, value}` |
+
+#### Example
+
+```
+"Backtest a strategy on BTC where RSI(14) crosses below 30,
+with price above EMA(200), 3% stop-loss, and 2:1 risk-reward"
+```
+
+#### Response
+
+Returns performance metrics (return, win rate, Sharpe, drawdown), trade history, equity curve, train/test split, price/volume context, and current signal status.
+
+---
+
+### scan\_custom\_signals
+
+Check if your strategy conditions are met right now.
+
+**Auth required:** Yes | **Cost:** Free
+
+#### Parameters
+
+| Name | Type | Required | Default | Description |
+|------|------|----------|---------|-------------|
+| `asset` | string | Yes | — | Crypto symbol |
+| `interval` | string | No | `1d` | Primary interval |
+| `trigger` | object | Yes | — | Trigger condition |
+| `confirmations` | array | No | `[]` | Confirmation conditions |
+
+#### Example
+
+```
+"Is RSI below 30 on BTC right now?"
+```
+
+#### Response
+
+Returns current value of each indicator, whether each condition is met, and overall signal status: **ACTIVE** (all conditions met, trigger just fired), **APPROACHING** (getting close), or **INACTIVE**.
+
+---
+
+### deploy\_strategy\_as\_bot
+
+Deploy a strategy as a live bot on your connected exchange.
+
+**Auth required:** Yes
+
+#### Parameters
+
+| Name | Type | Required | Default | Description |
+|------|------|----------|---------|-------------|
+| `exchange` | string | Yes | — | Exchange: `binance`, `bybit`, `okx`, etc. |
+| `account` | string | No | `SPOT` | Account type: `SPOT` or `FUTURES` |
+| `investment` | number | No | `100` | Investment in quote asset |
+| `quote_asset` | string | No | `USDT` | Quote asset |
+| *+ all strategy params* | | | | Same as `backtest_custom_strategy` |
+
+The bot is created in **paused** mode. Activate it from the Anny Trade dashboard when ready.
+
+---
+
+### get\_bot\_strategy
+
+Retrieve the strategy definition for a custom strategy bot.
+
+**Auth required:** Yes
+
+#### Parameters
+
+| Name | Type | Required | Description |
+|------|------|----------|-------------|
+| `bot_id` | string | Yes | Bot ID |
+
+---
+
+### update\_strategy\_config
+
+Update the strategy rules on an existing bot.
+
+**Auth required:** Yes
+
+#### Parameters
+
+| Name | Type | Required | Description |
+|------|------|----------|-------------|
+| `bot_id` | string | Yes | Bot ID |
+| `strategy` | object | Yes | Updated strategy definition |
+
+---
+
+## Condition Format
+
+Each condition (trigger or confirmation) uses this format:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `indicator` | string | `RSI`, `EMA`, `SMA`, `MACD`, `ADX`, `ATR`, `BBANDS`, `STOCHRSI`, or `PRICE` |
+| `params` | object | Indicator parameters (e.g., `{"period": 14}`) |
+| `field` | string | Output field (e.g., `value`, `histogram`, `upper`) |
+| `operator` | string | `crosses_above`, `crosses_below`, `above`, `below` |
+| `compare_to` | number or object | Threshold value (e.g., `30`) or another indicator reference |
+| `interval` | string | Optional: override interval for multi-timeframe (e.g., `1d` on a `4h` strategy) |
+
+---
+
 ## Safety Annotations
 
 All tools include [MCP safety annotations](https://modelcontextprotocol.io/specification/draft/schema#toolannotations):
@@ -155,5 +283,10 @@ All tools include [MCP safety annotations](https://modelcontextprotocol.io/speci
 | get_portfolio_status | true | false | true |
 | run_scenario_analysis | true | false | true |
 | feedback_to_anny | false | false | true |
+| backtest_custom_strategy | true | false | true |
+| scan_custom_signals | true | false | true |
+| deploy_strategy_as_bot | false | false | false |
+| get_bot_strategy | true | false | true |
+| update_strategy_config | false | false | true |
 
-All tools are read-only except `feedback_to_anny` (which writes feedback to our system but never modifies your account or positions).
+Read-only tools never modify your account. `deploy_strategy_as_bot` creates a new bot (always paused). `update_strategy_config` modifies an existing bot's rules.

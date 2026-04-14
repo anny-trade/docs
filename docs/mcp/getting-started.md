@@ -49,7 +49,7 @@ Some tools work without signing in:
 - **get_market_analysis** — Full indicator readings for any asset
 - **feedback_to_anny** — Send feedback
 
-To use portfolio-related tools (`get_portfolio_status`, `run_scenario_analysis`), you need to sign in.
+To use portfolio tools (`get_portfolio_status`, `run_scenario_analysis`) and custom strategy tools (`backtest_custom_strategy`, `scan_custom_signals`, `deploy_strategy_as_bot`), you need to sign in.
 
 ## Verify It Works
 
