@@ -11,6 +11,21 @@ Rate limits are applied per user (authenticated) or per IP (guest) using a slidi
 | PRO | 30 | 1,000 |
 | PRO+ | 60 | 5,000 |
 
+## Credit Costs
+
+Most tools are free to use. The following tools consume credits from your subscription balance:
+
+| Tool | Credits | Min Tier |
+|------|---------|----------|
+| `ask_anny` | 1 | FREE |
+| `backtest_custom_strategy` | 5 | FREE |
+| `optimize_strategy` | 8 | PRO |
+| `stress_test_strategy` | 15 | PRO |
+
+All other tools cost 0 credits:
+
+`get_market_analysis`, `get_price`, `get_macro_analysis`, `get_daily_briefing`, `get_market_state`, `get_portfolio_status`, `get_risk_score`, `simulate_scenario`, `run_scenario_analysis`, `assess_trade_risk`, `scan_custom_signals`, `deploy_strategy_as_bot`, `get_bot_strategy`, `update_strategy_config`, `calculate_position_size`, `calculate_stop_loss`, `feedback_to_anny`
+
 ## Response Headers
 
 When rate limited, the server returns HTTP `429` with:

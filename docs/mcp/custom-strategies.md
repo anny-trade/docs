@@ -131,3 +131,7 @@ Backtests include realistic costs:
 
 !!! warning "Important"
     Results are hypothetical and simulated. Past performance does not indicate future results. Signal status of ACTIVE means your conditions are met — it is not a recommendation to trade. Bots are always created paused. This is not financial advice.
+
+## See Also
+
+Once you've built a custom strategy, you can optimize your CFO Line settings and validate them against unseen data with [Strategy Optimization](strategy-optimization.md).

@@ -12,6 +12,8 @@ nav:
       - Authentication: mcp/authentication.md
       - Tools Reference: mcp/tools.md
       - Custom Strategy Builder: mcp/custom-strategies.md
+      - Strategy Optimization: mcp/strategy-optimization.md
+      - Risk & Position Management: mcp/risk-tools.md
       - Example Prompts: mcp/examples.md
       - Rate Limits: mcp/rate-limits.md
       - Compliance & Disclaimers: mcp/compliance.md

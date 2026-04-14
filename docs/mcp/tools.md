@@ -144,6 +144,152 @@ Confirmation that your feedback was recorded.
 
 ---
 
+## get\_price
+
+Get the current price of any crypto asset. Lightweight and fast — use this when you just need a quick price check, not a full market analysis.
+
+**Auth required:** No
+
+### Parameters
+
+| Name | Type | Required | Default | Description |
+|------|------|----------|---------|-------------|
+| `asset` | string | Yes | — | Crypto symbol: `BTC`, `ETH`, `SOL`, etc. (1–10 characters) |
+| `trade_market` | string | No | `USDT` | Quote currency |
+
+### Example
+
+> "What's the price of ETH right now?"
+
+### Response
+
+Returns:
+
+- Current price in the specified quote currency
+- 24h price change (percentage)
+- 24h range (low – high)
+- 24h trading volume
+
+```
+BTC/USDT: $67,432.10 (+2.35%)
+24h Range: $65,800.00 – $68,100.00
+24h Volume: $1,234,567,890.00
+```
+
+---
+
+## get\_market\_state
+
+Get a comprehensive snapshot of current crypto market conditions, covering sentiment, technicals, derivatives, ETF flows, and on-chain metrics.
+
+**Auth required:** Yes
+
+### Parameters
+
+None.
+
+### Example
+
+> "How is the market doing right now?"
+
+### Response
+
+Returns a multi-section overview:
+
+- **Fear & Greed Index** — 0–100 scale with classification (Extreme Fear / Fear / Neutral / Greed / Extreme Greed)
+- **Risk Summary** — market, on-chain, and macro risk scores (0–100) with zone labels
+- **BTC Overview** — price, RSI(14) with interpretation, EMA 20/50/200 levels, distance from EMA 200, dominance, golden/death cross signals
+- **Derivatives** — BTC and ETH funding rates (8h + annualised), 24h liquidations
+- **Bitcoin ETF Flows** — daily flow, 7-day net flow, flow streak
+- **On-Chain Metrics** — MVRV Z-Score, NUPL, Coinbase Premium, and 7-day exchange netflow, each with interpretation zones
+
+---
+
+## get\_daily\_briefing
+
+Get an AI-generated daily briefing about market conditions and your portfolio. The briefing is personalised to your holdings and generated fresh each day.
+
+**Auth required:** Yes
+
+### Parameters
+
+None.
+
+### Example
+
+> "Give me my morning briefing"
+
+### Response
+
+Returns a concise 60–100 word summary combining:
+
+- Current market state and sentiment
+- Key market events and shifts
+- Portfolio-relevant observations
+
+---
+
+## get\_risk\_score
+
+Get a composite risk score (0–100) for your portfolio, calculated from four weighted components.
+
+**Auth required:** Yes
+
+### Parameters
+
+None.
+
+### Example
+
+> "How risky is my portfolio right now?"
+
+### Response
+
+Returns:
+
+- **Overall score** — 0–100 with label: Low Risk, Moderate Risk, High Risk, or Very High Risk
+- **Score change** — delta since last reading
+- **Breakdown** — sub-scores for each component:
+    - Portfolio (30%) — concentration, diversification, allocation by tier
+    - Market (30%) — BTC technicals, Fear & Greed, ETF flows, funding rates
+    - On-Chain (25%) — MVRV valuation, NUPL sentiment, exchange flows
+    - Macro (15%) — Fed posture, macro shocks, meeting timing
+- **Key Factors** — top risk factors explained in plain language
+- **Portfolio Breakdown** — each asset with allocation percentage and tier (blue-chip, large-cap, mid-cap, small-cap)
+
+---
+
+## get\_macro\_analysis
+
+Get an AI-generated analysis comparing Bitcoin against a macro indicator. Each analysis includes current values, ratio, and a multi-paragraph interpretation.
+
+**Auth required:** No
+
+### Parameters
+
+| Name | Type | Required | Default | Description |
+|------|------|----------|---------|-------------|
+| `pair` | string | Yes | — | Macro comparison pair: `btc-xau`, `btc-dxy`, or `btc-pmi` |
+
+Available pairs:
+
+- **btc-xau** — BTC vs Gold: correlation, divergence, store-of-value narrative
+- **btc-dxy** — BTC vs US Dollar Index: inverse correlation, dollar strength impact
+- **btc-pmi** — BTC vs Manufacturing PMI: economic activity correlation
+
+### Example
+
+> "How does Bitcoin correlate with gold right now?"
+
+### Response
+
+Returns:
+
+- **Data snapshot** — BTC price, indicator value, ratio, and data source
+- **Analysis** — AI-generated multi-paragraph interpretation of the current relationship
+
+---
+
 ## Custom Strategy Tools
 
 For full documentation on custom strategies, see [Custom Strategy Builder](custom-strategies.md).
@@ -283,6 +429,11 @@ All tools include [MCP safety annotations](https://modelcontextprotocol.io/speci
 | get_portfolio_status | true | false | true |
 | run_scenario_analysis | true | false | true |
 | feedback_to_anny | false | false | true |
+| get_price | true | false | true |
+| get_market_state | true | false | true |
+| get_daily_briefing | true | false | false |
+| get_risk_score | true | false | true |
+| get_macro_analysis | true | false | true |
 | backtest_custom_strategy | true | false | true |
 | scan_custom_signals | true | false | true |
 | deploy_strategy_as_bot | false | false | false |
