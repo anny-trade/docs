@@ -14,8 +14,8 @@ Diagnose why the CFO Line is losing money on a specific asset and find filter se
     This feature is in beta. Results are experimental and should be validated before applying filter settings to a live bot.
 
 - **Auth required:** Yes
-- **Cost:** 8 credits
-- **Minimum tier:** PRO or PRO+
+- **Cost:** 900 credits
+- **Minimum tier:** PRO or Pro Max
 
 ### Parameters
 
@@ -93,8 +93,8 @@ Walk-forward analysis splits historical data into rolling windows (4+ minimum). 
     This tool is currently under development. The endpoint is registered but returns a "coming soon" message. Use `optimize_strategy` in the meantime.
 
 - **Auth required:** Yes
-- **Cost:** 15 credits
-- **Minimum tier:** PRO or PRO+
+- **Cost:** 1,800 credits
+- **Minimum tier:** PRO or Pro Max
 
 ### Parameters
 

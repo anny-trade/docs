@@ -9,7 +9,7 @@ Rate limits are applied per user (authenticated) or per IP (guest) using a slidi
 | Guest (no auth) | 5 | 50 |
 | FREE | 10 | 200 |
 | PRO | 30 | 1,000 |
-| PRO+ | 60 | 5,000 |
+| Pro Max | 60 | 5,000 |
 
 ## Credit Costs
 
@@ -17,10 +17,12 @@ Most tools are free to use. The following tools consume credits from your subscr
 
 | Tool | Credits | Min Tier |
 |------|---------|----------|
-| `ask_anny` | 1 | FREE |
-| `backtest_custom_strategy` | 5 | FREE |
-| `optimize_strategy` | 8 | PRO |
-| `stress_test_strategy` | 15 | PRO |
+| `ask_anny` | Varies (80–2,900) | FREE |
+| `backtest_custom_strategy` | 100 | PRO |
+| `optimize_strategy` | 900 | PRO |
+| `stress_test_strategy` | 1,800 | Pro Max |
+
+AI-powered tools (`ask_anny`) are billed dynamically based on actual token usage. Simple questions cost ~80–150 credits; deep portfolio analysis with multiple tool rounds costs more. You can see the exact cost of each response via the info icon next to it.
 
 All other tools cost 0 credits:
 

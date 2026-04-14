@@ -64,13 +64,13 @@ Sign in to unlock the full toolset:
 - **get_risk_score** — Composite portfolio risk score (0-100) with sub-scores
 - **simulate_scenario** — Project the impact of hypothetical scenarios on your holdings
 - **run_scenario_analysis** — Historical backtest of the CFO Line on any asset
-- **backtest_custom_strategy** — Backtest your own indicator strategy (5 credits)
+- **backtest_custom_strategy** — Backtest your own indicator strategy (100 credits)
 - **scan_custom_signals** — Check if your strategy conditions are met right now
 - **deploy_strategy_as_bot** — Deploy a strategy as a live trading bot
 - **get_bot_strategy** — View strategy rules on an existing bot
 - **update_strategy_config** — Modify strategy rules on a bot
-- **optimize_strategy** — Diagnose and optimize CFO Line filter settings (8 credits)
-- **stress_test_strategy** — Walk-forward validation of optimized settings (15 credits, coming soon)
+- **optimize_strategy** — Diagnose and optimize CFO Line filter settings (900 credits)
+- **stress_test_strategy** — Walk-forward validation of optimized settings (1,800 credits, coming soon)
 
 ## Verify It Works
 

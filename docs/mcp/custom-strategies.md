@@ -70,7 +70,7 @@ Anny aligns the timeframes automatically using forward-fill mapping, so higher-t
 
 Test your strategy against historical data. Returns performance metrics, trade history, equity curve, and current signal status.
 
-- **Cost:** 5 credits
+- **Cost:** 100 credits
 - **Lookback periods:** 3M, 6M, 1y
 
 ### scan\_custom\_signals

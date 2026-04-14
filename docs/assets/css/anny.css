@@ -149,8 +149,26 @@
 /* Admonitions */
 [data-md-color-scheme="anny"] .md-typeset .admonition,
 [data-md-color-scheme="anny"] .md-typeset details {
-  background-color: #10101E;
-  border-color: #222240;
+  background-color: #15152A;
+  border-left: 3px solid;
+}
+
+[data-md-color-scheme="anny"] .md-typeset .admonition.note {
+  border-left-color: #9B7AFF;
+}
+
+[data-md-color-scheme="anny"] .md-typeset .admonition.warning {
+  border-left-color: #FFB547;
+}
+
+[data-md-color-scheme="anny"] .md-typeset .admonition .admonition-title,
+[data-md-color-scheme="anny"] .md-typeset details summary {
+  background-color: rgba(155, 122, 255, 0.1);
+  border-bottom: 1px solid #222240;
+}
+
+[data-md-color-scheme="anny"] .md-typeset .admonition.warning .admonition-title {
+  background-color: rgba(255, 181, 71, 0.1);
 }
 
 /* Footer copyright */

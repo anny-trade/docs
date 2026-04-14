@@ -160,7 +160,7 @@ Retrieve and update strategy rules on an existing bot.
 
 > **Optimize the CFO Line on BTC daily over the last year**
 
-Diagnoses losing trade patterns and recommends filter settings to eliminate them. Costs 8 credits.
+Diagnoses losing trade patterns and recommends filter settings to eliminate them. Costs 900 credits.
 
 > **Why is my strategy losing money on ETH?**
 

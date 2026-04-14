@@ -35,7 +35,7 @@ Anny exposes 21 tools across six categories. Some work without signing in; other
 
 | Tool | Description | Auth | Credits |
 |------|-------------|------|---------|
-| `backtest_custom_strategy` | Backtest your own indicator strategy on historical data | Yes | 5 |
+| `backtest_custom_strategy` | Backtest your own indicator strategy on historical data | Yes | 100 |
 | `scan_custom_signals` | Check if your strategy conditions are met right now | Yes | 0 |
 | `deploy_strategy_as_bot` | Deploy a strategy as a live trading bot (created paused) | Yes | 0 |
 | `get_bot_strategy` | View strategy rules on an existing bot | Yes | 0 |
@@ -45,8 +45,8 @@ Anny exposes 21 tools across six categories. Some work without signing in; other
 
 | Tool | Description | Auth | Credits |
 |------|-------------|------|---------|
-| `optimize_strategy` | Diagnose and optimize CFO Line filter settings (Beta) | Yes | 8 |
-| `stress_test_strategy` | Walk-forward analysis to validate optimized settings (Coming soon) | Yes | 15 |
+| `optimize_strategy` | Diagnose and optimize CFO Line filter settings (Beta) | Yes | 900 |
+| `stress_test_strategy` | Walk-forward analysis to validate optimized settings (Coming soon) | Yes | 1,800 |
 
 ### Risk Management
 
@@ -59,7 +59,7 @@ Anny exposes 21 tools across six categories. Some work without signing in; other
 
 | Tool | Description | Auth | Credits |
 |------|-------------|------|---------|
-| `ask_anny` | Ask Anny anything about crypto or your portfolio | No* | 1 |
+| `ask_anny` | Ask Anny anything about crypto or your portfolio | No* | Varies |
 | `feedback_to_anny` | Send feedback or report a bug | No | 0 |
 
 *`ask_anny` works without auth (limited public chat) but provides full portfolio context when signed in.

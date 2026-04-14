@@ -298,7 +298,7 @@ For full documentation on custom strategies, see [Custom Strategy Builder](custo
 
 Backtest a custom trading strategy against historical data using technical indicators.
 
-**Auth required:** Yes | **Cost:** 5 credits
+**Auth required:** Yes | **Cost:** 100 credits
 
 #### Parameters
 
