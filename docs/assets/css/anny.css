@@ -151,6 +151,12 @@
 [data-md-color-scheme="anny"] .md-typeset details {
   background-color: #15152A;
   border-left: 3px solid;
+  color: #C4BFD8;
+}
+
+[data-md-color-scheme="anny"] .md-typeset .admonition p,
+[data-md-color-scheme="anny"] .md-typeset details p {
+  color: #C4BFD8;
 }
 
 [data-md-color-scheme="anny"] .md-typeset .admonition.note {
@@ -163,12 +169,14 @@
 
 [data-md-color-scheme="anny"] .md-typeset .admonition .admonition-title,
 [data-md-color-scheme="anny"] .md-typeset details summary {
-  background-color: rgba(155, 122, 255, 0.1);
+  background-color: rgba(155, 122, 255, 0.15);
   border-bottom: 1px solid #222240;
+  color: #F0EEF8;
 }
 
 [data-md-color-scheme="anny"] .md-typeset .admonition.warning .admonition-title {
-  background-color: rgba(255, 181, 71, 0.1);
+  background-color: rgba(255, 181, 71, 0.15);
+  color: #FFB547;
 }
 
 /* Footer copyright */
