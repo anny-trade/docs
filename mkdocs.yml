@@ -11,6 +11,7 @@ nav:
       - Getting Started: mcp/getting-started.md
       - Authentication: mcp/authentication.md
       - Tools Reference: mcp/tools.md
+      - Signal Tools: mcp/signals.md
       - Custom Strategy Builder: mcp/custom-strategies.md
       - Strategy Optimization: mcp/strategy-optimization.md
       - Risk & Position Management: mcp/risk-tools.md

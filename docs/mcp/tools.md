@@ -440,4 +440,24 @@ All tools include [MCP safety annotations](https://modelcontextprotocol.io/speci
 | get_bot_strategy | true | false | true |
 | update_strategy_config | false | false | true |
 
+| get_signal | true | false | true |
+| list_active_signals | true | false | true |
+| get_signal_automation_config | true | false | true |
+| analyze_signal_with_cfo | true | false | true |
+| cancel_pending_order | false | **true** | false |
+| place_take_profit | false | **true** | false |
+| place_trailing_stop | false | **true** | false |
+
 Read-only tools never modify your account. `deploy_strategy_as_bot` creates a new bot (always paused). `update_strategy_config` modifies an existing bot's rules.
+
+**Exchange-mutation tools** (`cancel_pending_order`, `place_take_profit`, `place_trailing_stop`) have real exchange side-effects — they place or cancel orders on your connected exchange. These are only available on the `/v1/full` endpoint (OAuth required) and are marked `destructiveHint: true`.
+
+### Endpoint Split
+
+| Endpoint | Tools | Auth Required | Directory Eligible |
+|----------|-------|---------------|-------------------|
+| `/v1` | Read-only + analysis | No (guest OK) | Yes |
+| `/v1/full` | All tools incl. mutations | OAuth required | No |
+| `/mcp` | Alias for `/v1/full` | No (backward compat) | No |
+
+For signal-specific tool documentation, see [Signal Tools](signals.md).
