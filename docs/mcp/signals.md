@@ -1,7 +1,6 @@
 # Signal Tools
 
-<!-- AUTO-GENERATED from anny-trade-mcp/src/definitions/signal-tools.ts -->
-<!-- Do not edit manually. Run: cd anny-trade-mcp && node scripts/generate-docs.mjs -->
+<!-- Source of truth: anny-backend/src/askanny/tools/ToolDefinitions.js -->
 
 Tools for reading and managing trading signals via the MCP connector.
 
@@ -272,8 +271,7 @@ Place a trailing stop (stop-loss) order on the exchange for a signal's position.
 
 ## Adding new signal tools
 
-1. Add the definition to `anny-trade-mcp/src/definitions/signal-tools.ts`
-2. Create the MCP tool in `src/tools/`
-3. Add the handler in `anny-backend/src/askanny/tools/ToolExecutor.js`
-4. Run `cd anny-trade-mcp && npm run build && node scripts/generate-docs.mjs`
-5. Commit the updated `anny-docs/docs/mcp/signals.md`
+1. Add the definition to `anny-backend/src/askanny/tools/ToolDefinitions.js`
+2. Add the handler in `anny-backend/src/askanny/tools/ToolExecutor.js`
+3. Add the MCP tool in `anny-trade-mcp/src/tools/`
+4. Update this doc and `anny-docs/docs/mcp/tools.md`

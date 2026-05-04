@@ -12,19 +12,19 @@ Returns the current indicator state, recent transitions, and context.
 
 > **Compare the CFO Line state for ETH across all timeframes**
 
-Anny will check the 1d, 4h, and 1h intervals and summarize alignment or divergence.
+Anny checks the 1d, 4h, and 1h intervals and summarizes alignment or divergence.
 
 > **Which of these coins is showing strength right now: SOL, AVAX, LINK?**
 
 Anny checks each asset and reports which are in Accumulate, Wait, or Distribute.
 
+> **Compare SOL vs ETH**
+
+Head-to-head comparison with CFO Line states, performance spread, technicals, and fundamentals.
+
 ---
 
-## Daily Briefing & Market State
-
-> **Give me a morning briefing**
-
-Returns an AI-generated summary of market conditions and portfolio-relevant observations.
+## Market State & Sentiment
 
 > **What's the current market sentiment?**
 
@@ -34,65 +34,49 @@ Pulls the Fear & Greed Index, BTC technicals, ETF flows, funding rates, and on-c
 
 Anny checks derivatives data and reports funding rates alongside liquidation activity.
 
----
+> **Give me a full market overview**
 
-## Price Checks
-
-> **What's the current price of SOL?**
-
-Returns the live price, 24h change, range, and volume.
-
-> **How much is ETH right now?**
-
-Quick price lookup without a full analysis — fast and lightweight.
+Cross-market analysis: BTC regime, correlations with S&P 500 and Gold, market cap data.
 
 ---
 
-## Macro Analysis
+## Institutional Intelligence
 
-> **How is Bitcoin correlating with gold right now?**
+> **What are the latest ETF flows?**
 
-Returns the BTC vs Gold ratio, current values, and an AI-generated analysis of the store-of-value narrative.
+Returns daily, weekly, and monthly ETF flow data with per-issuer breakdown.
 
-> **What's the relationship between BTC and the dollar index?**
+> **How much Bitcoin does MicroStrategy hold?**
 
-Pulls the BTC vs DXY comparison with inverse correlation context and dollar strength impact.
+Corporate treasury data across 154+ companies.
 
----
+> **Is there smart money accumulation happening?**
 
-## Portfolio Review
-
-> **How is my portfolio doing?**
-
-Returns a full portfolio table with prices, P&L, and indicator states for every position.
-
-> **Show me just my Binance positions**
-
-Filters to a single exchange.
-
-> **Which of my holdings are in a Distribute state?**
-
-Anny reads your portfolio and highlights assets showing weakness.
+Whale on-chain activity, stablecoin supply, and mined vs bought ratios.
 
 ---
 
-## Risk Assessment
+## Flip Intelligence
 
-> **How risky is my portfolio right now?**
+> **BTC just flipped to Accumulate — should I trust it?**
 
-Returns a composite risk score (0-100) broken down by portfolio, market, on-chain, and macro factors.
+Returns a confidence score (0–100) with sub-scores explaining why the flip may or may not hold.
 
-> **Should I be worried about my positions?**
+> **Is this flip contrarian or consensus?**
 
-Anny evaluates your risk exposure and lists the top contributing factors in plain language.
+Anny checks what percentage of all assets are in each state and flags if the flip goes against the crowd.
 
-> **Is it a good time to go long on ETH?**
+---
 
-Runs a technical risk assessment with RSI, ADX, MACD, and volume analysis for the specified direction.
+## Technical Analysis
 
-> **What's the risk of shorting SOL on futures?**
+> **Show me RSI and MACD for ETH on the daily chart**
 
-Assesses short-side technical conditions on the FUTURES account.
+Returns momentum, trend, and volume indicators via `get_technical_analysis`.
+
+> **Is BTC overbought on the 4h chart?**
+
+Anny checks RSI, ADX, and EMA alignment for the specified timeframe.
 
 ---
 
@@ -112,19 +96,91 @@ Models the upside impact on your positions and total portfolio value.
 
 ---
 
-## Historical Scenario Analysis
+## Tax & Holdings
 
-> **Run a scenario analysis for BTC over the last year**
+> **Do I need to pay DARF this month?**
 
-Returns performance metrics and the top 5 notable entries/exits.
+Returns monthly disposals, gains/losses, thresholds, and DARF estimate.
 
-> **How would the CFO Line have performed on ETH using the 4h chart over 6 months?**
+> **What's my cost basis?**
+
+Shows per-asset holdings with weighted average cost and unrealized gain/loss.
+
+---
+
+## Signal Management
+
+> **What signals do I have?**
+
+Lists all active trading signals with asset, direction, entry price, P&L, and automation state.
+
+> **Show me signal #12345**
+
+Detailed view of a specific signal including targets, stop-loss, and CFO Line state.
+
+> **Enable auto-buy for signal #12345**
+
+Toggles the auto-invest flag. DB-only — no exchange side-effect.
+
+> **Change my target to $70,000 for signal #12345**
+
+Updates the target price in the database.
+
+> **Cancel my pending order on signal #12345**
+
+Cancels the exchange order. Anny confirms before executing.
+
+---
+
+## Bot Management
+
+> **List my bots**
+
+Shows all bots with type, status, exchange, and asset.
+
+> **How is my bot abc123 performing?**
+
+Returns recent trigger events — entries, take-profits, stops fired.
+
+> **Pause my bot abc123**
+
+Pauses the bot. Anny confirms before executing.
+
+---
+
+## Portfolio Management
+
+> **How much USDT do I have?**
+
+Checks your exchange balance for a specific asset.
+
+> **Can I trade DOGE on my exchange?**
+
+Checks symbol availability across your connected exchanges.
+
+> **Buy $200 worth of ETH**
+
+Anny shows a preview first, then asks for confirmation before placing the real order.
+
+> **Do I have any open orders?**
+
+Lists all pending orders across connected exchanges.
+
+> **Cancel order 12345678 for BTC/USDT**
+
+Cancels the specific order after confirmation.
+
+---
+
+## CFO Line Backtest
+
+> **Backtest the CFO Line on BTC daily over the last year**
+
+Returns performance metrics: total return, win rate, Sharpe, max drawdown, profit factor.
+
+> **How does the CFO Line perform on ETH 4h over 6 months?**
 
 Runs the analysis with custom interval and period settings.
-
-> **Compare scenario analysis results for SOL on daily vs 4-hour**
-
-Anny runs both analyses and compares the results.
 
 ---
 
@@ -132,27 +188,19 @@ Anny runs both analyses and compares the results.
 
 > **Backtest buying BTC when RSI(14) crosses below 30, with price above EMA(200), 3% stop-loss, and 2:1 risk-reward over the last year**
 
-Runs a full backtest with performance metrics, trade history, equity curve, and current signal status.
+Runs a full backtest with metrics, trade history, and current signal status.
 
 > **Is RSI below 30 on BTC right now?**
 
-Scans live market data and returns current indicator values plus signal status.
+Scans live data for your strategy conditions.
 
 > **Try the same strategy but with RSI 25 instead of 30, and add an ADX > 25 confirmation**
 
 Iterate on your strategy — adjust thresholds, add/remove indicators, change timeframes.
 
-> **Backtest a strategy on ETH 4h where EMA(9) crosses above EMA(21), but only when the daily RSI is above 50**
-
-Multi-timeframe strategy: 4-hour trigger with a daily confirmation.
-
 > **Deploy this strategy as a bot on Binance SPOT with $200 USDT**
 
-Creates a paused bot on your exchange. Activate it from the dashboard when ready.
-
-> **What's the strategy on bot abc123? Change the stop-loss to 4%**
-
-Retrieve and update strategy rules on an existing bot.
+Creates a paused bot. Activate from the dashboard when ready.
 
 ---
 
@@ -160,31 +208,39 @@ Retrieve and update strategy rules on an existing bot.
 
 > **Optimize the CFO Line on BTC daily over the last year**
 
-Diagnoses losing trade patterns and recommends filter settings to eliminate them. Costs 900 credits.
+Diagnoses losing patterns and recommends filter settings. Costs 900 credits.
 
 > **Why is my strategy losing money on ETH?**
 
-Runs the optimizer to identify whipsaw, weak conviction, counter-trend, or revenge trade patterns.
-
-> **Find better settings for SOL on the 4-hour chart**
-
-Tests 15-20 filter configurations and compares baseline vs optimized performance.
+Identifies whipsaw, weak conviction, counter-trend, or revenge trade patterns.
 
 ---
 
-## Stop-Loss & Position Sizing
+## Trading Ideas
 
-> **Where should I put my stop-loss if I'm going long on BTC at $65,000?**
+> **Tell me about the BTC EMA crossover strategy**
 
-Calculates stop-loss levels using three models (ATR volatility, swing structure, and adaptive regime detection) plus take-profit targets at multiple risk-reward ratios.
+Returns full analysis of a published strategy: rules, metrics, regime breakdown, OOS validation.
 
-> **Calculate my position size with a $10,000 account, entry at $65,000, and stop at $62,000**
+> **Deploy the btc-ema-crossover-1d strategy on Binance with $500**
 
-Returns the position size in USD and units, risk amount, and portfolio allocation percentage.
+Creates a bot from a published strategy.
 
-> **Use Kelly criterion with a 55% win rate and 2:1 win-loss ratio**
+---
 
-Applies Half-Kelly sizing with expected value analysis and cap warnings.
+## Support & Knowledge
+
+> **How do I connect my Binance account?**
+
+Routes to the Knowledge Agent for platform how-to questions.
+
+> **My portfolio isn't syncing**
+
+Routes to the Support Agent with automatic diagnostics.
+
+> **How do I get my Bybit API key?**
+
+Step-by-step exchange setup guide.
 
 ---
 
@@ -198,16 +254,8 @@ Applies Half-Kelly sizing with expected value analysis and cap warnings.
 >
 > *[Anny uses conversation context to check BTC on 4h]*
 >
-> **Run a scenario analysis for it**
+> **Run a backtest for it**
 >
 > *[Anny runs the analysis for BTC]*
 
-The `ask_anny` tool supports multi-turn context via conversation IDs.
-
----
-
-## Feedback
-
-> **The portfolio tool is showing stale prices for my Bybit positions — they haven't updated in over an hour**
-
-Sends a detailed bug report directly to the Anny development team.
+The `ask_anny` MCP tool supports multi-turn context via conversation IDs.
