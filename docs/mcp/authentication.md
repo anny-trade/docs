@@ -55,6 +55,42 @@ All authorization requests must include PKCE parameters:
 
 Most MCP clients generate PKCE parameters automatically.
 
+## Personal Access Tokens (PAT)
+
+For CLI tools like Claude Code that can't do browser OAuth redirects, use a Personal Access Token.
+
+### Creating a PAT
+
+1. Go to [anny.trade](https://anny.trade) → **Settings** → **API Keys**
+2. Click **Create Token** and give it a name
+3. Copy the token immediately — it's shown only once
+
+### Token Format
+
+- Prefix: `pat_` followed by 64 hex characters (68 chars total)
+- Example: `pat_a1b2c3d4e5f6...`
+- Only the SHA-256 hash is stored server-side
+
+### Lifetime & Limits
+
+| Property | Value |
+|----------|-------|
+| Default expiry | 90 days |
+| Max tokens per user | 10 |
+| Scopes | `read:portfolio`, `read:analysis`, `ask:anny` |
+
+### Usage
+
+Pass the PAT as a Bearer token in the `Authorization` header:
+
+```
+Authorization: Bearer pat_a1b2c3d4...
+```
+
+### Revoking a PAT
+
+Go to **Settings** → **API Keys** and click **Revoke** on any active token. Revoked tokens stop working immediately (within 5 minutes due to caching).
+
 ## For Tool Developers
 
 If you're building a custom MCP client, here's the manual flow:

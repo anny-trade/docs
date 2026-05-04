@@ -1231,6 +1231,6 @@ The following tools are available to unauthenticated (guest) visitors:
 
 `get_technical_analysis`, `get_market_state`, `get_market_analysis`, `get_anny_line_status`, `get_flip_intelligence`, `get_exchange_setup_guide`, `ask_agent`, `get_trading_idea_analysis`, `compare_assets`, `get_institutional_intelligence`
 
-All other tools require authentication.
+All other tools require authentication (via OAuth or [Personal Access Token](authentication.md#personal-access-tokens-pat)).
 
 For signal-specific tool documentation, see [Signal Tools](signals.md).

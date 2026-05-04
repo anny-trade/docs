@@ -27,6 +27,30 @@
    - **URL:** `https://mcp.anny.trade/mcp`
 5. Click **Connect** and sign in when prompted
 
+## Connect to Claude Code
+
+Claude Code (CLI) doesn't support browser-based OAuth. Use a Personal Access Token instead:
+
+1. Go to [anny.trade](https://anny.trade) → **Settings** → **API Keys**
+2. Click **Create Token**, give it a name, and copy it (starts with `pat_`, shown once)
+3. Add to your Claude Code config (`.claude/settings.json`):
+
+```json
+{
+  "mcpServers": {
+    "anny-trade": {
+      "type": "url",
+      "url": "https://mcp.anny.trade/mcp",
+      "headers": {
+        "Authorization": "Bearer pat_..."
+      }
+    }
+  }
+}
+```
+
+4. Restart Claude Code — you're connected
+
 ## Connect to Other MCP Clients
 
 Any client that supports the MCP Streamable HTTP transport can connect. Point it at:
