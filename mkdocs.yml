@@ -44,6 +44,20 @@ nav:
       - Connect to Claude.ai: guides/claude-web.md
       - Understanding CFO Line States: guides/cfo-line-states.md
       - Reading Your Portfolio: guides/reading-portfolio.md
+  - Help Center:
+      - Overview: help/index.md
+      - Getting Started:
+          - Register: help/getting-started/register.md
+      - Connect Your Exchange:
+          - Binance: help/connect-exchange/binance.md
+          - Bybit: help/connect-exchange/bybit.md
+          - Kraken: help/connect-exchange/kraken.md
+          - Coinbase Advanced: help/connect-exchange/coinbase.md
+          - OKX: help/connect-exchange/okx.md
+          - Kucoin: help/connect-exchange/kucoin.md
+          - Gate.io: help/connect-exchange/gate-io.md
+      - Account:
+          - Delete Your Account: help/account/delete-account.md
 
 theme:
   name: material
