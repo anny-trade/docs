@@ -2,7 +2,7 @@
 
 All available MCP tools organized by category, with parameters and response formats.
 
-The source of truth for tool definitions is `anny-backend/src/askanny/tools/ToolDefinitions.js` (54 tools). This document covers every implemented tool.
+The source of truth for tool definitions is `anny-trade-mcp/src/tools/` (66 tools). This document covers every implemented tool.
 
 ---
 

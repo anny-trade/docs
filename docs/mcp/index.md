@@ -4,7 +4,7 @@ The Anny Trade MCP Connector lets you access Anny's portfolio intelligence tools
 
 ## What You Can Do
 
-Anny exposes 54 tools across ten categories. Some work without signing in; others require authentication and may cost credits.
+Anny exposes 66 tools across ten categories. Some work without signing in; others require authentication and may cost credits.
 
 ### Technical Analysis & Market Intelligence
 
@@ -75,12 +75,6 @@ Anny exposes 54 tools across ten categories. Some work without signing in; other
 | `prescan_custom_strategy` | Free loss pattern pre-scan | Yes | 0 |
 | `optimize_custom_strategy` | Full custom strategy optimizer (PRO+) | Yes | 900 |
 
-### Trading Ideas
-
-| Tool | Description | Auth | Credits |
-|------|-------------|------|---------|
-| `get_trading_idea_analysis` | Analysis of published strategies | No | 0 |
-
 ### Portfolio Management
 
 | Tool | Description | Auth | Credits |
@@ -91,10 +85,40 @@ Anny exposes 54 tools across ten categories. Some work without signing in; other
 | `get_open_orders` | List pending orders | Yes | 0 |
 | `cancel_order` | Cancel a pending order | Yes | 0 |
 
+### Market Data & Risk
+
+| Tool | Description | Auth | Credits |
+|------|-------------|------|---------|
+| `get_price` | Real-time price for any trading pair | No | 0 |
+| `get_daily_briefing` | AI-generated daily market summary | Yes | Dynamic |
+| `get_macro_analysis` | BTC vs Gold, DXY, PMI macro analysis | No | 0 |
+| `get_risk_score` | Portfolio risk assessment | Yes | 0 |
+| `get_portfolio_status` | Aggregate portfolio overview | Yes | 0 |
+| `calculate_stop_loss` | Optimal stop-loss calculator | No | 0 |
+| `calculate_position_size` | Position sizing based on risk | No | 0 |
+| `assess_trade_risk` | Pre-trade risk assessment | No | 0 |
+| `stress_test_strategy` | Walk-forward stress test | Yes | 1800 |
+
+### Strategy Deployment
+
+| Tool | Description | Auth | Credits |
+|------|-------------|------|---------|
+| `deploy_strategy_as_bot` | Deploy optimized strategy as a live bot | Yes | 0 |
+| `get_bot_strategy` | Get strategy parameters for a bot | Yes | 0 |
+| `update_strategy_config` | Update bot strategy configuration | Yes | 0 |
+
+### Trading Ideas
+
+| Tool | Description | Auth | Credits |
+|------|-------------|------|---------|
+| `list_trading_ideas` | Browse published strategy ideas | No | 0 |
+| `get_trading_idea_detail` | Detailed analysis of a trading idea | No | 0 |
+
 ### Support & Knowledge
 
 | Tool | Description | Auth | Credits |
 |------|-------------|------|---------|
+| `ask_anny` | Full AI conversation with Anny | Yes | Dynamic |
 | `ask_agent` | Knowledge base + support agent | No | 0 |
 | `check_user_health` | Platform diagnostics | Yes | 0 |
 | `create_support_ticket` | Escalate to human support | Yes | 0 |
@@ -102,6 +126,7 @@ Anny exposes 54 tools across ten categories. Some work without signing in; other
 | `record_resolution_feedback` | Rate support quality | Yes | 0 |
 | `claim_welcome_bonus` | Claim 500-credit welcome bonus | Yes | 0 |
 | `get_exchange_setup_guide` | Exchange API key setup guide | No | 0 |
+| `feedback_to_anny` | Submit product feedback | No | 0 |
 | `log_skill_gap` / `submit_skill_request` / `submit_bug_report` | Feature requests & bugs | Yes | 0 |
 
 ## Server URL
