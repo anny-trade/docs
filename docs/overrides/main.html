@@ -63,6 +63,36 @@
   </script>
   {% endif %}
 
+  {% if page and page.url and page.url != "" and page.url != "/" %}
+  {%- set segments = page.url.strip("/").split("/") -%}
+  {%- if segments | length > 0 and segments[0] != "" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Anny Trade Docs",
+        "item": "https://docs.anny.trade/"
+      }{% if segments | length > 0 and segments[0] != "" %},{% endif %}
+      {%- set ns = namespace(path="https://docs.anny.trade") -%}
+      {%- for seg in segments %}
+      {%- set ns.path = ns.path ~ "/" ~ seg -%}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index + 1 }},
+        "name": {{ seg | replace("-", " ") | title | tojson }},
+        "item": {{ (ns.path ~ "/") | tojson }}
+      }{% if not loop.last %},{% endif %}
+      {%- endfor %}
+    ]
+  }
+  </script>
+  {%- endif %}
+  {% endif %}
+
   {% if page and page.meta and page.meta.faq %}
   <script type="application/ld+json">
   {

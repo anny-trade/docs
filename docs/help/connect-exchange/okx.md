@@ -1,3 +1,12 @@
+---
+faq:
+  - q: "Does Anny need the Withdraw permission on my OKX API key?"
+    a: "No. Never check the 'Withdraw' field. Anny only needs the 'trade' permission — leaving withdrawals off protects both you and Anny."
+  - q: "What IPs should I restrict my OKX API key to for Anny?"
+    a: "18.197.221.166, 3.120.52.14, 3.124.90.105, 3.124.91.26, 3.124.99.155."
+  - q: "Do I need a passphrase to connect OKX to Anny?"
+    a: "Yes. OKX V5 API keys require a passphrase. Set one when creating the key and enter it in Anny alongside the API and secret keys."
+---
 # How do I connect OKX to Anny?
 
 In order to use Anny it's necessary to have an exchange account.
@@ -20,7 +29,7 @@ Select the "trade" field and copy-paste Anny's restricted IPs.
 
 **Coy-paste the restricted IPs:** 
 
-18.197.221.166,3.120.52.14,3.124.90.105,3.124.91.26,3.124.99.155,52.57.104.76
+18.197.221.166,3.120.52.14,3.124.90.105,3.124.91.26,3.124.99.155
 
 By confirming the API and Private keys will be generated, save them somewhere as you will need to copy and paste them into Anny.
 
@@ -33,3 +42,10 @@ If you are going to operate the futures account, make sure that the account mode
 To connect the API and secret keys to Anny access your Profile (upper right corner), click on "Settings" then select "Exchanges".
 
 Click on "Add exchange", select the correct exchange and paste the API and Secret keys along with the passphrase.
+## See Also
+
+- [How do I connect Binance to Anny?](binance.md)
+- [How do I connect Bybit to Anny?](bybit.md)
+- [How do I create an Anny Trade account?](../getting-started/register.md)
+
+> **Anny Trade** — AI crypto portfolio intelligence, 29,000+ traders across 7 exchanges, since 2019. [anny.trade](https://anny.trade)

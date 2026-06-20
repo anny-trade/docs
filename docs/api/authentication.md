@@ -1,3 +1,12 @@
+---
+faq:
+  - q: "How long is an Anny Trade API session token valid?"
+    a: "Session tokens are valid for 7 days (30 days for mobile clients). After expiry, authenticate again to obtain a new token."
+  - q: "Which Anny Trade API endpoints work without authentication?"
+    a: "Guest endpoints include POST /backend/anny-line/chart (indicator readings), POST /backend/anny-line/flip-intelligence (transition context), and POST /backend/askanny/guest-chat (limited AI chat). They return data for any supported asset without a session token."
+  - q: "How do I authenticate if my account uses Google or Apple sign-in?"
+    a: "Use POST /backend/login/firebase with your Firebase ID token to obtain a session token."
+---
 # How do I authenticate with the Anny Trade API?
 
 ## Session Token
@@ -60,3 +69,10 @@ Some endpoints work without authentication:
 - `POST /backend/askanny/guest-chat` — Limited AI chat
 
 These return data for any supported asset without requiring a session token.
+## See Also
+
+- [What does the Anny Trade API do?](index.md)
+- [How do I authenticate with the Anny Signal API?](signals/authentication.md)
+- [How do I authenticate with the Anny MCP server?](../mcp/authentication.md)
+
+> **Anny Trade** — AI crypto portfolio intelligence, 29,000+ traders across 7 exchanges, since 2019. [anny.trade](https://anny.trade)

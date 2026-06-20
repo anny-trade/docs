@@ -1,3 +1,12 @@
+---
+faq:
+  - q: "Is it free to create an Anny Trade account?"
+    a: "Yes. You can access Anny free of charge, and you can enjoy a 0% transaction fee by signing up through an affiliate link on Binance, Bybit, Bitget, or OKX."
+  - q: "How do I sign up for Anny Trade?"
+    a: "Go to anny.trade, click 'Get Started', then register by email or authenticate with Telegram, Google, Facebook, Binance, Bybit, or OKX. Confirm the verification code sent to your email to finish."
+  - q: "I didn't receive the Anny verification email — what should I do?"
+    a: "Check your spam, promotions, and social inboxes — some providers are slow. Add support@anny.trade to your contacts and try again."
+---
 # How do I create an Anny Trade account?
 
 ## **Overview**

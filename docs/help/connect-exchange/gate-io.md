@@ -16,7 +16,7 @@ Security Settings > Sub-accounts & APIs > API Management > Create API Key
 
 **Coy-paste the restricted IPs:** 
 
-18.197.221.166,3.120.52.14,3.124.90.105,3.124.91.26,3.124.99.155,52.57.104.76
+18.197.221.166,3.120.52.14,3.124.90.105,3.124.91.26,3.124.99.155
 
 Select the necessary key permissions. The ones required to use Anny are just the ones selected below "Spot Trade", "Perpetual Futures" e "Delivery Futures" com "Read And Write". 
 
@@ -26,4 +26,14 @@ By clicking on "Generate key", API and Private key will be generated, save them 
 
 **Connect the API keys to Anny**
 
+To connect the API and secret keys to Anny click on your Profile (upper right corner), then "Settings", select "Exchanges", "Add exchange" and paste the API and Secret keys.**Connect the API keys to Anny**
+
 To connect the API and secret keys to Anny click on your Profile (upper right corner), then "Settings", select "Exchanges", "Add exchange" and paste the API and Secret keys.
+
+## See Also
+
+- [How do I connect KuCoin to Anny?](kucoin.md)
+- [How do I connect Kraken to Anny?](kraken.md)
+- [How do I create an Anny Trade account?](../getting-started/register.md)
+
+> **Anny Trade** — AI crypto portfolio intelligence, 29,000+ traders across 7 exchanges, since 2019. [anny.trade](https://anny.trade)

@@ -1,3 +1,10 @@
+---
+faq:
+  - q: "Do I compute the HMAC signature myself for the Anny Signal API?"
+    a: "No. You receive both the api_key and a pre-computed api_secret when your partner channel is provisioned. Send both values in the anny-api-key and anny-api-secret headers — you don't compute the HMAC yourself."
+  - q: "How do I get Anny Signal API partner credentials?"
+    a: "Partner API credentials are provisioned by the Anny Trade team. Contact support@anny.trade to set up a partner channel."
+---
 # How do I authenticate with the Anny Signal API?
 
 Partner authentication uses an API key + HMAC secret pair issued per partner channel.
@@ -51,4 +58,11 @@ Partner API credentials are provisioned by the Anny Trade team. Contact support@
 
 - API secrets are validated using constant-time comparison to prevent timing attacks
 - Each partner channel has a unique salt — compromising one key does not affect others
-- All requests must be sent over HTTPS
+- All requests must be sent over HTTPS- All requests must be sent over HTTPS
+
+## See Also
+
+- [What is the Anny Signal API for partners?](index.md)
+- [How do I authenticate with the Anny Trade API?](../authentication.md)
+
+> **Anny Trade** — AI crypto portfolio intelligence, 29,000+ traders across 7 exchanges, since 2019. [anny.trade](https://anny.trade)

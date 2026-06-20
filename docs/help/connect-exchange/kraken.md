@@ -20,4 +20,14 @@ By clicking on "Generate key", API and Private key will be generated, save them 
 
 **Connect the API keys to Anny**
 
+To connect the API and secret keys to Anny click on your Profile (upper right corner), then "Settings", select "Exchanges", "Add exchange" and paste the API and Secret keys.**Connect the API keys to Anny**
+
 To connect the API and secret keys to Anny click on your Profile (upper right corner), then "Settings", select "Exchanges", "Add exchange" and paste the API and Secret keys.
+
+## See Also
+
+- [How do I connect Binance to Anny?](binance.md)
+- [How do I connect Coinbase Advanced to Anny?](coinbase.md)
+- [How do I create an Anny Trade account?](../getting-started/register.md)
+
+> **Anny Trade** — AI crypto portfolio intelligence, 29,000+ traders across 7 exchanges, since 2019. [anny.trade](https://anny.trade)

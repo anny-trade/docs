@@ -1,4 +1,4 @@
-# How Do I Delete My Account?
+# How do I delete my account?
 
 To permanently delete your Anny account, follow the steps below:
 

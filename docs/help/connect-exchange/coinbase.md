@@ -16,7 +16,7 @@ Select the necessary key permissions to trade on Anny, which are "View" and "Tra
 
 Create a "nickname" and put Anny's server IPs to make sure only Anny has access to the API key you have created.
 
-IPs: 18.197.221.166, 3.120.52.14, 3.124.90.105, 3.124.91.26, 3.124.99.155, 52.57.104.76
+IPs: 18.197.221.166, 3.120.52.14, 3.124.90.105, 3.124.91.26, 3.124.99.155
 
 By clicking on "Create and download" and authenticating, the API and secret keys will be generated. Save it somewhere as you will need to copy and paste it into Anny.
 
@@ -25,3 +25,10 @@ By clicking on "Create and download" and authenticating, the API and secret keys
 To connect the Coinbase API and secret keys to Anny click on your profile (upper right corner), click on "Settings" and select "Exchanges".
 
 "Create an exchange connection", select the correct exchange and paste the API keys to the appropriate fields.
+## See Also
+
+- [How do I connect Binance to Anny?](binance.md)
+- [How do I connect Kraken to Anny?](kraken.md)
+- [How do I create an Anny Trade account?](../getting-started/register.md)
+
+> **Anny Trade** — AI crypto portfolio intelligence, 29,000+ traders across 7 exchanges, since 2019. [anny.trade](https://anny.trade)
