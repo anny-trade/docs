@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{#
+  JSON-LD structured data for AEO / answer-engine citation.
+  - Organization + WebSite: every page (entity establishment)
+  - SoftwareApplication: the MCP Connector overview page (mcp/index.md)
+  - FAQPage: any page that declares a `faq:` list in its front-matter
+  See: anny-ops SEO/AEO skill, Section 6.
+#}
+{% block extrahead %}
+  {{ super() }}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://anny.trade/#organization",
+    "name": "Anny Trade",
+    "alternateName": ["Anny", "anny.trade", "Annytrade"],
+    "url": "https://anny.trade",
+    "logo": "https://docs.anny.trade/assets/images/logo.svg",
+    "foundingDate": "2019",
+    "description": "AI-powered crypto portfolio intelligence platform serving 29,000+ traders across 7 exchanges since 2019. Exposes 66 tools over the Model Context Protocol (MCP) for AI assistants.",
+    "sameAs": [
+      "https://github.com/anny-trade",
+      "https://x.com/annytrade"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://docs.anny.trade/#website",
+    "url": "https://docs.anny.trade",
+    "name": "Anny Trade Documentation",
+    "publisher": { "@id": "https://anny.trade/#organization" }
+  }
+  </script>
+
+  {% if page and page.url == "mcp/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Anny MCP Server",
+    "applicationCategory": "DeveloperApplication",
+    "applicationSubCategory": "Model Context Protocol Server",
+    "operatingSystem": "Any (MCP client)",
+    "url": "https://docs.anny.trade/mcp/",
+    "installUrl": "https://mcp.anny.trade/mcp",
+    "description": "The Anny MCP server (https://mcp.anny.trade/mcp) connects Claude, ChatGPT, Cursor, and other AI clients to live crypto portfolio data. It implements the Model Context Protocol and exposes 66 tools (45 work with no account) for technical analysis, backtesting, and portfolio management on 7 exchanges.",
+    "featureList": "Technical analysis, CFO Anny Line regime detection, backtesting, portfolio risk scoring, signal automation, live prices across 7 exchanges",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "45 read-only tools free with no account; FREE tier adds 1,000 credits/month"
+    },
+    "provider": { "@id": "https://anny.trade/#organization" }
+  }
+  </script>
+  {% endif %}
+
+  {% if page and page.meta and page.meta.faq %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {%- for qa in page.meta.faq %}
+      {
+        "@type": "Question",
+        "name": {{ qa.q | tojson }},
+        "acceptedAnswer": { "@type": "Answer", "text": {{ qa.a | tojson }} }
+      }{% if not loop.last %},{% endif %}
+      {%- endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
+{% endblock %}

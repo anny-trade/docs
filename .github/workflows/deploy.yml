@@ -20,10 +20,12 @@ jobs:
     runs-on: ubuntu-latest                                      
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # full history so git-revision-date-localized reads real per-file dates
       - uses: actions/setup-python@v5
-        with:                                                                                                                                     
+        with:
           python-version: '3.12'
-      - run: pip install mkdocs-material                                                                                                          
+      - run: pip install -r requirements.txt
       - run: mkdocs build --site-dir site                       
       - uses: actions/upload-pages-artifact@v3
         with:

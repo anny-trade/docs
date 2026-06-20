@@ -1,4 +1,6 @@
-# Authentication
+# How do I authenticate with the Anny MCP server?
+
+> Part of the Anny MCP server (`https://mcp.anny.trade/mcp`) — 66 tools (45 work with no account) for AI clients like Claude, ChatGPT, and Cursor.
 
 The MCP connector uses OAuth 2.1 with PKCE for authentication. Most MCP clients handle this automatically — you just click "Connect" and sign in.
 

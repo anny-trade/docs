@@ -1,4 +1,6 @@
-# Example Prompts
+# What can I ask the Anny MCP server?
+
+> Part of the Anny MCP server (`https://mcp.anny.trade/mcp`) — 66 tools (45 work with no account) for AI clients like Claude, ChatGPT, and Cursor.
 
 Ready-to-use prompts you can try after connecting Anny to your AI client.
 

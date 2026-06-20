@@ -1,4 +1,4 @@
-# MCP Connector
+# What is the Anny MCP server and how do I connect it?
 
 The Anny Trade MCP Connector lets you access Anny's portfolio intelligence tools directly from Claude, ChatGPT, or any [MCP-compatible](https://modelcontextprotocol.io) AI client.
 
@@ -18,7 +18,7 @@ Anny exposes 66 tools across ten categories. Some work without signing in; other
 | `get_market_state` | Fear & Greed, ETF flows, funding rates, on-chain metrics | Yes | 0 |
 | `get_market_analysis` | Cross-market dynamics: BTC regime, correlations, macro | No | 0 |
 | `run_scenario` | Portfolio stress-test: "what if BTC drops 30%?" | Yes | 0 |
-| `find_historical_pattern` | Find similar past market conditions (coming soon) | No | 0 |
+| `find_historical_pattern` | Find similar past market conditions (in data accumulation) | No | 0 |
 
 ### Tax & Holdings
 

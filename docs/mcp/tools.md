@@ -1,4 +1,6 @@
-# Tools Reference
+# What tools does the Anny MCP server provide?
+
+> Part of the Anny MCP server (`https://mcp.anny.trade/mcp`) — 66 tools (45 work with no account) for AI clients like Claude, ChatGPT, and Cursor.
 
 All available MCP tools organized by category, with parameters and response formats.
 
@@ -268,7 +270,7 @@ None.
 Returns past periods with similar Fear & Greed, RSI, EMA position, and on-chain metrics, along with what happened next (7d, 30d, 90d BTC price changes).
 
 !!! note "Coming Soon"
-    This tool is registered but returns a "coming soon" message while data accumulation is in progress.
+    This tool is registered and returns a staged-rollout notice while historical pattern data accumulates.
 
 ---
 

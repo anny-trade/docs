@@ -1,4 +1,6 @@
-# Strategy Optimization
+# How do I optimize a strategy with the Anny MCP server?
+
+> Part of the Anny MCP server (`https://mcp.anny.trade/mcp`) — 66 tools (45 work with no account) for AI clients like Claude, ChatGPT, and Cursor.
 
 Anny offers two optimization tools for refining your CFO Line settings. Use them together: first **optimize** to find better filter settings, then **stress test** to validate.
 
@@ -75,7 +77,7 @@ This tool is under development. Use `run_optimizer` in the meantime.
 1. Backtest  → "Backtest the CFO Line on BTC daily"
 2. Optimize  → "Optimize BTC on the daily chart"
 3. Review    → Check loss diagnosis and recommended filters
-4. Validate  → "Stress test my BTC strategy"       (coming soon)
+4. Validate  → "Stress test my BTC strategy"       (staged rollout)
 5. Apply     → Set recommended filters on your bot
 6. Monitor   → Re-run periodically for regime shifts
 ```

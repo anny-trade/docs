@@ -4,6 +4,13 @@ site_url: https://docs.anny.trade
 docs_dir: docs
 site_dir: site
 
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      fallback_to_build_date: true
+
 nav:
   - Welcome: index.md
   - MCP Connector:
@@ -61,6 +68,7 @@ nav:
 
 theme:
   name: material
+  custom_dir: docs/overrides
   language: en
   favicon: assets/images/favicon.png
   logo: assets/images/logo.svg

@@ -1,4 +1,6 @@
-# Compliance & Disclaimers
+# What are the compliance rules for the Anny MCP server?
+
+> Part of the Anny MCP server (`https://mcp.anny.trade/mcp`) — 66 tools (45 work with no account) for AI clients like Claude, ChatGPT, and Cursor.
 
 ## Financial Disclaimer
 

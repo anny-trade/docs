@@ -1,4 +1,4 @@
-# Getting Started
+# How do I get started with the Anny MCP server?
 
 ## Prerequisites
 
@@ -94,7 +94,7 @@ Sign in to unlock the full toolset:
 - **get_bot_strategy** — View strategy rules on an existing bot
 - **update_strategy_config** — Modify strategy rules on a bot
 - **optimize_strategy** — Diagnose and optimize CFO Line filter settings (900 credits)
-- **stress_test_strategy** — Walk-forward validation of optimized settings (1,800 credits, coming soon)
+- **stress_test_strategy** — Walk-forward validation of optimized settings (1,800 credits; staged rollout)
 
 ## Verify It Works
 

@@ -1,4 +1,6 @@
-# Risk & Position Management
+# How do I manage risk and positions with the Anny MCP server?
+
+> Part of the Anny MCP server (`https://mcp.anny.trade/mcp`) — 66 tools (45 work with no account) for AI clients like Claude, ChatGPT, and Cursor.
 
 !!! note "Planned"
     The tools on this page are planned but not yet implemented. They are on the roadmap for a future release.
