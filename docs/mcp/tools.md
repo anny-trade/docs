@@ -1174,7 +1174,7 @@ All tools include [MCP safety annotations](https://modelcontextprotocol.io/speci
 | scan_custom_signals | true | false | true |
 | prescan_custom_strategy | true | false | true |
 | optimize_strategy | true | false | true |
-| get_trading_idea_analysis | true | false | true |
+| get_trading_idea_detail | true | false | true |
 | check_symbol_availability | true | false | true |
 | get_exchange_balance | true | false | true |
 | get_open_orders | true | false | true |
@@ -1231,7 +1231,7 @@ Portfolio read tools (`check_symbol_availability`, `get_exchange_balance`, `get_
 
 The following tools are available to unauthenticated (guest) visitors:
 
-`get_technical_analysis`, `get_market_state`, `get_market_analysis`, `get_anny_line_status`, `get_flip_intelligence`, `get_exchange_setup_guide`, `ask_anny`, `get_trading_idea_analysis`, `compare_assets`, `get_institutional_intelligence`
+`get_technical_analysis`, `get_market_state`, `get_market_analysis`, `get_anny_line_status`, `get_flip_intelligence`, `get_exchange_setup_guide`, `ask_anny`, `get_trading_idea_detail`, `compare_assets`, `get_institutional_intelligence`
 
 All other tools require authentication (via OAuth or [Personal Access Token](authentication.md#personal-access-tokens-pat)).
 
