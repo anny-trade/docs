@@ -1,4 +1,4 @@
-# Bybit — Connect Exchange
+# How do I connect Bybit to Anny?
 
 In order to use Anny it's necessary to have an exchange account.
 

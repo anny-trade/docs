@@ -1,4 +1,4 @@
-# Connect to Claude.ai
+# How do I connect Anny to Claude.ai?
 
 Step-by-step guide to connecting Anny Trade to Claude on the web.
 

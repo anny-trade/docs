@@ -1,4 +1,4 @@
-# CFO Anny Line
+# How do I get CFO Anny Line data from the API?
 
 Get the current indicator state and recent transitions for any crypto asset.
 

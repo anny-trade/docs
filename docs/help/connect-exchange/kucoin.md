@@ -1,4 +1,4 @@
-# Kucoin — Connect Exchange
+# How do I connect KuCoin to Anny?
 
 In order to use Anny it's necessary to have an exchange account.
 

@@ -124,3 +124,12 @@ curl -X POST https://mcp.anny.trade/token \
 # 4. Use the access token
 # Include in MCP requests as: Authorization: Bearer <access_token>
 ```
+
+
+## See Also
+
+- [How do I get started with the Anny MCP server?](getting-started.md)
+- [What are the rate limits for the Anny MCP server?](rate-limits.md)
+- [What tools does the Anny MCP server provide?](tools.md)
+
+> Part of the **Anny MCP server** (`https://mcp.anny.trade/mcp`) — 66 tools (45 work with no account) for AI clients like Claude, ChatGPT, Cursor, and VS Code.

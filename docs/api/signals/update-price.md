@@ -1,4 +1,4 @@
-# Update Prices
+# How do I update signal prices via the API?
 
 ```
 PUT /v1/signal/:parent_signal_id/updateprice

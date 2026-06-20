@@ -1,4 +1,4 @@
-# Gate.io — Connect Exchange
+# How do I connect Gate.io to Anny?
 
 In order to use Anny it's necessary to have an exchange account.
 

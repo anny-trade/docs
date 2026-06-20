@@ -1,4 +1,4 @@
-# Coinbase Advanced — Connect Exchange
+# How do I connect Coinbase Advanced to Anny?
 
 In order to use Anny it's necessary to have an exchange account.
 

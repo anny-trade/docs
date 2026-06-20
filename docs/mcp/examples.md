@@ -261,3 +261,11 @@ Step-by-step exchange setup guide.
 > *[Anny runs the analysis for BTC]*
 
 The `ask_anny` MCP tool supports multi-turn context via conversation IDs.
+
+
+## See Also
+
+- [What tools does the Anny MCP server provide?](tools.md)
+- [How do I get started with the Anny MCP server?](getting-started.md)
+
+> Part of the **Anny MCP server** (`https://mcp.anny.trade/mcp`) — 66 tools (45 work with no account) for AI clients like Claude, ChatGPT, Cursor, and VS Code.

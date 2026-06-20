@@ -1,4 +1,4 @@
-# API Authentication
+# How do I authenticate with the Anny Trade API?
 
 ## Session Token
 

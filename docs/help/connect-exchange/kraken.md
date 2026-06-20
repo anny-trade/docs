@@ -1,4 +1,4 @@
-# Kraken — Connect Exchange
+# How do I connect Kraken to Anny?
 
 In order to use Anny it's necessary to have an exchange account.
 

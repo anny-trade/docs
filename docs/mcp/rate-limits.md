@@ -1,3 +1,10 @@
+---
+faq:
+  - q: "What are the rate limits for the Anny MCP server?"
+    a: "Limits apply per user (authenticated) or per IP (guest) on a sliding window: Guest (no auth) 5/minute and 50/day; FREE 10/minute and 200/day; PRO 30/minute and 1,000/day; Pro Max 60/minute and 5,000/day."
+  - q: "Do Anny MCP tools cost credits?"
+    a: "Most tools are free. Only backtesting, optimization, and AI chat/research consume credits from your subscription balance."
+---
 # What are the rate limits for the Anny MCP server?
 
 > Part of the Anny MCP server (`https://mcp.anny.trade/mcp`) — 66 tools (45 work with no account) for AI clients like Claude, ChatGPT, and Cursor.
@@ -55,3 +62,11 @@ The `retryAfterMs` field tells you how many milliseconds until the window resets
 - Sign in to get higher limits (even FREE accounts get 2x guest limits)
 - If you hit the per-minute limit, wait for the window to reset — it's usually under 60 seconds
 - Scenario analysis is the heaviest operation (10–30 seconds compute time) but counts as a single request
+
+
+## See Also
+
+- [How do I authenticate with the Anny MCP server?](authentication.md)
+- [What tools does the Anny MCP server provide?](tools.md)
+
+> Part of the **Anny MCP server** (`https://mcp.anny.trade/mcp`) — 66 tools (45 work with no account) for AI clients like Claude, ChatGPT, Cursor, and VS Code.

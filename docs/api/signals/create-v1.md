@@ -1,4 +1,4 @@
-# Create Signal (V1)
+# How do I create a signal (V1) via the Anny API?
 
 ```
 POST /v1/signal

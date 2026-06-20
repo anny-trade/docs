@@ -1,4 +1,4 @@
-# OKX — Connect Exchange
+# How do I connect OKX to Anny?
 
 In order to use Anny it's necessary to have an exchange account.
 

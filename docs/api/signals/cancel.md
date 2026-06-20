@@ -1,4 +1,4 @@
-# Cancel Signal
+# How do I cancel a signal via the API?
 
 ```
 DELETE /v1/signal/:parent_signal_id/cancel

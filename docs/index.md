@@ -1,4 +1,4 @@
-# Anny Trade Documentation
+# What is Anny Trade and how do I use its API and MCP server?
 
 Anny Trade is an AI-powered crypto portfolio intelligence platform. Use Anny's proprietary CFO Anny Line indicator to read market conditions, analyze your portfolio, and run historical scenario analyses — all from inside your favorite AI assistant.
 

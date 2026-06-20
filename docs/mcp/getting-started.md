@@ -1,3 +1,12 @@
+---
+faq:
+  - q: "Do I need an account to use the Anny MCP server?"
+    a: "No — 45 read-only tools work with no account. Authenticated tools (portfolio, signals, tax) require connecting your Anny Trade account via OAuth or a personal access token."
+  - q: "Which AI clients work with the Anny MCP server?"
+    a: "Claude Desktop, Claude.ai, Cursor, Windsurf, ChatGPT, VS Code, and Gemini — any MCP-compatible client."
+  - q: "What is the Anny MCP server URL?"
+    a: "https://mcp.anny.trade/mcp (streamable HTTP) or https://mcp.anny.trade/sse (SSE transport)."
+---
 # How do I get started with the Anny MCP server?
 
 ## Prerequisites
@@ -103,3 +112,12 @@ After connecting, try asking:
 > What's the CFO Anny Line reading for ETH on the daily chart?
 
 You should see the current indicator state (Accumulate, Wait, or Distribute) along with recent state transitions.
+
+
+## See Also
+
+- [How do I authenticate with the Anny MCP server?](authentication.md)
+- [What tools does the Anny MCP server provide?](tools.md)
+- [What are the rate limits for the Anny MCP server?](rate-limits.md)
+
+> Part of the **Anny MCP server** (`https://mcp.anny.trade/mcp`) — 66 tools (45 work with no account) for AI clients like Claude, ChatGPT, Cursor, and VS Code.

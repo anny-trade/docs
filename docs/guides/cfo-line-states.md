@@ -1,4 +1,4 @@
-# Understanding CFO Line States
+# What do the CFO Anny Line states (Accumulate, Distribute, Wait) mean?
 
 The CFO Anny Line is a proprietary trend indicator that classifies market conditions into three distinct states based on price structure.
 

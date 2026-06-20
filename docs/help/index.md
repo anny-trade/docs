@@ -1,4 +1,4 @@
-# Help Center
+# How can I get help with Anny Trade?
 
 Welcome to the Anny Help Center. Find guides on getting started, connecting your exchange, and managing your account.
 

@@ -1,4 +1,4 @@
-# Add Rebuy
+# How do I add a rebuy to a signal via the API?
 
 ```
 POST /v1/signal/:parent_signal_id/call/rebuy

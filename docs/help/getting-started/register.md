@@ -1,4 +1,4 @@
-# Register
+# How do I create an Anny Trade account?
 
 ## **Overview**
 

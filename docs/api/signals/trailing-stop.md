@@ -1,4 +1,4 @@
-# Add Trailing Stop
+# How do I add a trailing stop to a signal via the API?
 
 ```
 POST /v1/signal/:parent_signal_id/call/trailingstop

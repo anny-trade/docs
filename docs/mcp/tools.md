@@ -1236,3 +1236,12 @@ The following tools are available to unauthenticated (guest) visitors:
 All other tools require authentication (via OAuth or [Personal Access Token](authentication.md#personal-access-tokens-pat)).
 
 For signal-specific tool documentation, see [Signal Tools](signals.md).
+
+
+## See Also
+
+- [How do I authenticate with the Anny MCP server?](authentication.md)
+- [How do I manage trading signals with the Anny MCP server?](signals.md)
+- [What can I ask the Anny MCP server?](examples.md)
+
+> Part of the **Anny MCP server** (`https://mcp.anny.trade/mcp`) — 66 tools (45 work with no account) for AI clients like Claude, ChatGPT, Cursor, and VS Code.

@@ -1,4 +1,4 @@
-# askAnny
+# How do I use the askAnny API?
 
 Chat with Anny, the AI portfolio intelligence assistant. Anny has access to indicator readings, market data, and (for authenticated users) your portfolio context.
 

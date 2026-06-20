@@ -1,4 +1,4 @@
-# Connect to Claude Desktop
+# How do I connect Anny to Claude Desktop?
 
 Step-by-step guide to connecting Anny Trade to the Claude Desktop app.
 

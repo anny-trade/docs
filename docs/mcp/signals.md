@@ -277,3 +277,11 @@ Place a trailing stop (stop-loss) order on the exchange for a signal's position.
 2. Add the handler in `anny-backend/src/askanny/tools/ToolExecutor.js`
 3. Add the MCP tool in `anny-trade-mcp/src/tools/`
 4. Update this doc and `anny-docs/docs/mcp/tools.md`
+
+
+## See Also
+
+- [What tools does the Anny MCP server provide?](tools.md)
+- [How do I authenticate with the Anny MCP server?](authentication.md)
+
+> Part of the **Anny MCP server** (`https://mcp.anny.trade/mcp`) — 66 tools (45 work with no account) for AI clients like Claude, ChatGPT, Cursor, and VS Code.

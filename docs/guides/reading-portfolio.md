@@ -1,4 +1,4 @@
-# Reading Your Portfolio
+# How do I read my crypto portfolio with Anny?
 
 The `get_portfolio_status` tool gives you a complete view of your holdings across all connected exchanges, enriched with CFO Anny Line indicator states.
 

@@ -1,4 +1,4 @@
-# Binance — Connect Exchange
+# How do I connect Binance to Anny?
 
 To register with Anny, it's not necessary to have a Binance account, but in order to use Anny, yes!
 

@@ -1,4 +1,4 @@
-# Add Take Profit
+# How do I add a take-profit to a signal via the API?
 
 ```
 POST /v1/signal/:parent_signal_id/call/takeprofit

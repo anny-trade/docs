@@ -1,4 +1,4 @@
-# Scenario Analysis
+# How do I run a portfolio scenario analysis via the API?
 
 Run a historical scenario analysis to see how the CFO Anny Line indicator readings corresponded with price movements over a given period.
 

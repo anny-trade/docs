@@ -1,4 +1,4 @@
-# Signal API Authentication
+# How do I authenticate with the Anny Signal API?
 
 Partner authentication uses an API key + HMAC secret pair issued per partner channel.
 

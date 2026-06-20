@@ -1,4 +1,4 @@
-# Get Price
+# How do I get a live crypto price via the Anny API?
 
 ```
 GET /v3/ai/get_price

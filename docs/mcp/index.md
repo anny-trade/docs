@@ -147,3 +147,12 @@ Streamable HTTP (stateless). Each request creates a fresh transport — no sessi
 4. Start asking questions: *"What's the CFO Line reading for BTC?"*
 
 See [Getting Started](getting-started.md) for detailed setup instructions per client.
+
+
+## See Also
+
+- [How do I get started with the Anny MCP server?](getting-started.md)
+- [How do I authenticate with the Anny MCP server?](authentication.md)
+- [What tools does the Anny MCP server provide?](tools.md)
+
+> Part of the **Anny MCP server** (`https://mcp.anny.trade/mcp`) — 66 tools (45 work with no account) for AI clients like Claude, ChatGPT, Cursor, and VS Code.
