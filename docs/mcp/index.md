@@ -17,7 +17,7 @@ Anny exposes 66 tools across ten categories. Some work without signing in; other
 | `get_institutional_intelligence` | ETF flows, corporate treasuries, whale activity | No | 0 |
 | `get_market_state` | Fear & Greed, ETF flows, funding rates, on-chain metrics | Yes | 0 |
 | `get_market_analysis` | Cross-market dynamics: BTC regime, correlations, macro | No | 0 |
-| `run_scenario` | Portfolio stress-test: "what if BTC drops 30%?" | Yes | 0 |
+| `simulate_scenario` | Portfolio stress-test: "what if BTC drops 30%?" | Yes | 0 |
 | `find_historical_pattern` | Find similar past market conditions (in data accumulation) | No | 0 |
 
 ### Tax & Holdings
@@ -49,7 +49,7 @@ Anny exposes 66 tools across ten categories. Some work without signing in; other
 | `get_bot_config` | Bot configuration details | Yes | 0 |
 | `get_bot_fires` | Bot trigger history | Yes | 0 |
 | `pause_bot` / `restart_bot` | Pause or restart a bot | Yes | 0 |
-| `create_bot_from_strategy` | Deploy strategy as a bot (created paused) | Yes | 0 |
+| `deploy_strategy_as_bot` | Deploy strategy as a bot (created paused) | Yes | 0 |
 
 ### Community (Signal Groups)
 
@@ -63,8 +63,8 @@ Anny exposes 66 tools across ten categories. Some work without signing in; other
 
 | Tool | Description | Auth | Credits |
 |------|-------------|------|---------|
-| `run_cfo_line_backtest` | Backtest CFO Line on any asset | Yes | 100 |
-| `run_optimizer` | Diagnose and optimize CFO Line filters (PRO+) | Yes | 900 |
+| `backtest_custom_strategy` | Backtest CFO Line on any asset | Yes | 100 |
+| `optimize_strategy` | Diagnose and optimize CFO Line filters (PRO+) | Yes | 900 |
 
 ### Custom Strategies
 
@@ -73,7 +73,7 @@ Anny exposes 66 tools across ten categories. Some work without signing in; other
 | `backtest_custom_strategy` | Backtest custom indicator strategy | Yes | In msg |
 | `scan_custom_signals` | Check if strategy conditions are met now | Yes | 0 |
 | `prescan_custom_strategy` | Free loss pattern pre-scan | Yes | 0 |
-| `optimize_custom_strategy` | Full custom strategy optimizer (PRO+) | Yes | 900 |
+| `optimize_strategy` | Full custom strategy optimizer (PRO+) | Yes | 900 |
 
 ### Portfolio Management
 
@@ -119,7 +119,7 @@ Anny exposes 66 tools across ten categories. Some work without signing in; other
 | Tool | Description | Auth | Credits |
 |------|-------------|------|---------|
 | `ask_anny` | Full AI conversation with Anny | Yes | Dynamic |
-| `ask_agent` | Knowledge base + support agent | No | 0 |
+| `ask_anny` | Knowledge base + support agent | No | 0 |
 | `check_user_health` | Platform diagnostics | Yes | 0 |
 | `create_support_ticket` | Escalate to human support | Yes | 0 |
 | `get_ticket_status` | Check ticket status | Yes | 0 |

@@ -1155,7 +1155,7 @@ All tools include [MCP safety annotations](https://modelcontextprotocol.io/speci
 | get_institutional_intelligence | true | false | true |
 | get_market_state | true | false | true |
 | get_market_analysis | true | false | true |
-| run_scenario | true | false | true |
+| simulate_scenario | true | false | true |
 | find_historical_pattern | true | false | true |
 | get_tax_status | true | false | true |
 | get_tax_holdings | true | false | true |
@@ -1168,17 +1168,17 @@ All tools include [MCP safety annotations](https://modelcontextprotocol.io/speci
 | get_bot_fires | true | false | true |
 | list_communities | true | false | true |
 | get_community_pnl | true | false | true |
-| run_cfo_line_backtest | true | false | true |
-| run_optimizer | true | false | true |
+| backtest_custom_strategy | true | false | true |
+| optimize_strategy | true | false | true |
 | backtest_custom_strategy | true | false | true |
 | scan_custom_signals | true | false | true |
 | prescan_custom_strategy | true | false | true |
-| optimize_custom_strategy | true | false | true |
+| optimize_strategy | true | false | true |
 | get_trading_idea_analysis | true | false | true |
 | check_symbol_availability | true | false | true |
 | get_exchange_balance | true | false | true |
 | get_open_orders | true | false | true |
-| ask_agent | true | false | false |
+| ask_anny | true | false | false |
 | check_user_health | true | false | true |
 | get_ticket_status | true | false | true |
 | get_exchange_setup_guide | true | false | true |
@@ -1193,7 +1193,7 @@ All tools include [MCP safety annotations](https://modelcontextprotocol.io/speci
 | toggle_auto_trailing | false | false | true |
 | update_signal_target | false | false | true |
 | allocate_community_investment | false | false | true |
-| create_bot_from_strategy | false | false | false |
+| deploy_strategy_as_bot | false | false | false |
 | pause_bot | false | false | true |
 | restart_bot | false | false | true |
 | create_support_ticket | false | false | false |
@@ -1231,7 +1231,7 @@ Portfolio read tools (`check_symbol_availability`, `get_exchange_balance`, `get_
 
 The following tools are available to unauthenticated (guest) visitors:
 
-`get_technical_analysis`, `get_market_state`, `get_market_analysis`, `get_anny_line_status`, `get_flip_intelligence`, `get_exchange_setup_guide`, `ask_agent`, `get_trading_idea_analysis`, `compare_assets`, `get_institutional_intelligence`
+`get_technical_analysis`, `get_market_state`, `get_market_analysis`, `get_anny_line_status`, `get_flip_intelligence`, `get_exchange_setup_guide`, `ask_anny`, `get_trading_idea_analysis`, `compare_assets`, `get_institutional_intelligence`
 
 All other tools require authentication (via OAuth or [Personal Access Token](authentication.md#personal-access-tokens-pat)).
 

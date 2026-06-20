@@ -67,7 +67,7 @@ Walk-forward analysis to validate whether optimized settings hold up on unseen d
 - **Cost:** 1,800 credits
 - **Minimum tier:** PRO or Pro Max
 
-This tool is under development. Use `run_optimizer` in the meantime.
+This tool is under development. Use `optimize_strategy` in the meantime.
 
 ---
 
